@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=4 format=3 uid="uid://cjniub0lh24nm"]
+
+[ext_resource type="Texture2D" uid="uid://bq7xb5yopt4pm" path="res://assets/vivienne back.png" id="1_xx1hw"]
+[ext_resource type="Script" path="res://src/resources/character_data.gd" id="2_nc5m1"]
+[ext_resource type="Texture2D" uid="uid://dpla5kyf3s51c" path="res://assets/vivienne front.png" id="2_xjtyj"]
+
+[resource]
+script = ExtResource("2_nc5m1")
+name = "Vivienne"
+desired_effects = Array[int]([0, 0])
+undesired_effects = Array[int]([0, 0])
+back_sprite_base = ExtResource("1_xx1hw")
+front_sprite_base = ExtResource("2_xjtyj")
+back_sprite_tea = ExtResource("1_xx1hw")
+front_sprite_tea = ExtResource("2_xjtyj")
