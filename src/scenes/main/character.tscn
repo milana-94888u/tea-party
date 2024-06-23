@@ -1,9 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cebisjuser8u0"]
+[gd_scene load_steps=2 format=3 uid="uid://cebisjuser8u0"]
 
 [ext_resource type="Script" path="res://src/scenes/main/character.gd" id="1_10xxw"]
-[ext_resource type="Resource" uid="uid://cjniub0lh24nm" path="res://resources/characters/vivienne.tres" id="2_vq6um"]
-[ext_resource type="Texture2D" uid="uid://bq7xb5yopt4pm" path="res://assets/vivienne back.png" id="3_xev82"]
-[ext_resource type="Texture2D" uid="uid://dpla5kyf3s51c" path="res://assets/vivienne front.png" id="4_ra1tu"]
 
 [node name="Character" type="Control"]
 layout_mode = 3
@@ -13,7 +10,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_10xxw")
-character_data = ExtResource("2_vq6um")
 
 [node name="CharacterBack" type="TextureRect" parent="."]
 unique_name_in_owner = true
@@ -21,7 +17,6 @@ z_index = -1
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("3_xev82")
 
 [node name="CupSpot" type="Control" parent="."]
 unique_name_in_owner = true
@@ -34,4 +29,3 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_right = 1000.0
 offset_bottom = 1000.0
-texture = ExtResource("4_ra1tu")

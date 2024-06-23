@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=11 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
 [ext_resource type="Texture2D" uid="uid://c5cgw5ytit845" path="res://assets/table.png" id="2_mxjnu"]
 [ext_resource type="Texture2D" uid="uid://b0q102v443u8x" path="res://assets/details on front.png" id="3_6bfes"]
+[ext_resource type="Resource" uid="uid://3t4lxng5vd02" path="res://resources/characters/selene.tres" id="4_4k6hw"]
+[ext_resource type="PackedScene" uid="uid://cebisjuser8u0" path="res://src/scenes/main/character.tscn" id="4_tdins"]
+[ext_resource type="Resource" uid="uid://c2je4p82bieq6" path="res://resources/characters/brokk.tres" id="5_0ci1l"]
+[ext_resource type="Resource" uid="uid://bkawa07t0v1ux" path="res://resources/characters/mel.tres" id="6_2dxjs"]
+[ext_resource type="Resource" uid="uid://cjniub0lh24nm" path="res://resources/characters/vivienne.tres" id="7_cmgwm"]
+[ext_resource type="Resource" uid="uid://cktjktliysf5n" path="res://resources/characters/om.tres" id="8_eijjg"]
+[ext_resource type="Resource" uid="uid://ceeqxdqudfeq7" path="res://resources/characters/liam.tres" id="8_s2x27"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -13,6 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Background" type="TextureRect" parent="."]
+z_index = -1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -34,11 +42,71 @@ texture = ExtResource("2_mxjnu")
 expand_mode = 3
 metadata/_edit_lock_ = true
 
+[node name="Characters" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Selene" parent="Characters" instance=ExtResource("4_tdins")]
+layout_mode = 1
+offset_left = 63.0
+offset_top = 191.0
+offset_right = 63.0
+offset_bottom = 191.0
+scale = Vector2(0.5, 0.5)
+character_data = ExtResource("4_4k6hw")
+
+[node name="Brokk" parent="Characters" instance=ExtResource("4_tdins")]
+layout_mode = 1
+offset_left = 317.0
+offset_top = 160.0
+offset_right = 317.0
+offset_bottom = 160.0
+scale = Vector2(0.5, 0.5)
+character_data = ExtResource("5_0ci1l")
+
+[node name="Mel" parent="Characters" instance=ExtResource("4_tdins")]
+layout_mode = 1
+offset_left = 604.0
+offset_top = 85.0
+offset_right = 604.0
+offset_bottom = 85.0
+scale = Vector2(0.5, 0.5)
+character_data = ExtResource("6_2dxjs")
+
+[node name="Vivienne" parent="Characters" instance=ExtResource("4_tdins")]
+layout_mode = 1
+offset_left = 861.0
+offset_top = 108.0
+offset_right = 861.0
+offset_bottom = 108.0
+scale = Vector2(0.5, 0.5)
+character_data = ExtResource("7_cmgwm")
+
+[node name="Liam" parent="Characters" instance=ExtResource("4_tdins")]
+layout_mode = 1
+offset_left = 1162.0
+offset_top = 136.0
+offset_right = 1162.0
+offset_bottom = 136.0
+scale = Vector2(0.5, 0.5)
+character_data = ExtResource("8_s2x27")
+
+[node name="Om" parent="Characters" instance=ExtResource("4_tdins")]
+layout_mode = 1
+offset_left = 1429.0
+offset_top = 153.0
+offset_right = 1429.0
+offset_bottom = 153.0
+scale = Vector2(0.5, 0.5)
+character_data = ExtResource("8_eijjg")
+
 [node name="DetailsFront" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 31.1111
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_6bfes")

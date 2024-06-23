@@ -8,5 +8,5 @@ script = ExtResource("2_h8k6c")
 name = "Om"
 desired_effects = Array[int]([0, 0])
 undesired_effects = Array[int]([0, 0])
-back_sprite_base = ExtResource("1_gks72")
-back_sprite_tea = ExtResource("1_gks72")
+front_sprite_base = ExtResource("1_gks72")
+front_sprite_tea = ExtResource("1_gks72")
