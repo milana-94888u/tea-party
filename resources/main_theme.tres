@@ -1,4 +1,7 @@
-[gd_resource type="Theme" format=3 uid="uid://b78sk1t2fxuvk"]
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b78sk1t2fxuvk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q01gv"]
+bg_color = Color(0.483912, 0.660092, 0.384535, 1)
 
 [resource]
 default_font_size = 32
@@ -7,3 +10,4 @@ MarginContainer/constants/margin_bottom = 50
 MarginContainer/constants/margin_left = 50
 MarginContainer/constants/margin_right = 50
 MarginContainer/constants/margin_top = 50
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_q01gv")

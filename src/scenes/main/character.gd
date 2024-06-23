@@ -1,4 +1,5 @@
 @tool
+class_name Character
 extends Control
 
 
@@ -43,11 +44,11 @@ func set_correct_sprites() -> void:
 		character_data = value
 		set_correct_sprites()
 
-@export var introduction_dialog: Array[DialogLineData]
-@export var upset_dialog: Array[DialogLineData]
-@export var back_to_normal_dialog: Array[DialogLineData]
-@export var happy_dialog: Array[DialogLineData]
-@export var filler_phrases: Array[String]
+@export var introduction_dialog: DialogData
+@export var upset_dialog: DialogData
+@export var back_to_normal_dialog: DialogData
+@export var happy_dialog: DialogData
+@export var filler_phrases: Array[DialogData]
 
 
 func give_cup(cup: Cup) -> void:
@@ -55,5 +56,5 @@ func give_cup(cup: Cup) -> void:
 	has_cup = true
 
 
-func evaluate_tea() -> void:
+func evaluate_tea(tea: Tea) -> void:
 	pass

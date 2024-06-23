@@ -1,13 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhpf0livup6hx"]
+[gd_scene load_steps=7 format=3 uid="uid://bhpf0livup6hx"]
 
 [ext_resource type="Script" path="res://src/scenes/ui/dialog_line.gd" id="1_3aif4"]
 [ext_resource type="Script" path="res://src/resources/dialog_line_data.gd" id="2_f26eo"]
-[ext_resource type="Resource" uid="uid://bkawa07t0v1ux" path="res://resources/characters/mel.tres" id="2_upjlv"]
-[ext_resource type="Texture2D" uid="uid://c40jmc5vku17h" path="res://assets/mel back.png" id="4_k2ft6"]
+[ext_resource type="Resource" uid="uid://cjniub0lh24nm" path="res://resources/characters/vivienne.tres" id="2_m4mys"]
+[ext_resource type="Texture2D" uid="uid://bq7xb5yopt4pm" path="res://assets/vivienne back.png" id="4_f8ep4"]
+[ext_resource type="Texture2D" uid="uid://dpla5kyf3s51c" path="res://assets/vivienne front.png" id="5_tm1x5"]
 
 [sub_resource type="Resource" id="Resource_hldbr"]
 script = ExtResource("2_f26eo")
-character = ExtResource("2_upjlv")
+character = ExtResource("2_m4mys")
 text = "Hello"
 
 [node name="DialogLine" type="Control"]
@@ -20,7 +21,7 @@ grow_vertical = 2
 script = ExtResource("1_3aif4")
 dialog_line_data = SubResource("Resource_hldbr")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="ClickPreventingBackground" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,40 +29,61 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
+mouse_filter = 2
 
 [node name="Spacer" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 2
 
-[node name="CharacterSprite" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-unique_name_in_owner = true
+[node name="CharacterSprite" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 9.0
-texture = ExtResource("4_k2ft6")
-expand_mode = 2
-stretch_mode = 4
+mouse_filter = 2
+
+[node name="CharacterSpriteBack" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/CharacterSprite"]
+unique_name_in_owner = true
+texture = ExtResource("4_f8ep4")
+centered = false
+
+[node name="CharacterSpriteFront" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/CharacterSprite"]
+unique_name_in_owner = true
+texture = ExtResource("5_tm1x5")
+centered = false
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer"]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="Title" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"HeaderLarge"
-text = "Mel"
+text = "Vivienne"
 
 [node name="LineText" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer"]
 unique_name_in_owner = true
@@ -72,3 +94,5 @@ text = "Hello"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[connection signal="pressed" from="ClickPreventingBackground" to="." method="_on_click_preventing_background_pressed"]

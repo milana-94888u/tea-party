@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhxvuw4g6drsr"]
+
+[ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_lqnet"]
+[ext_resource type="Texture2D" uid="uid://c5cgw5ytit845" path="res://assets/table.png" id="2_nqokd"]
+
+[node name="EmptyMain" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lqnet")
+expand_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Table" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nqokd")
+expand_mode = 3
+metadata/_edit_lock_ = true
