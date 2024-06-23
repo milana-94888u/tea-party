@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bslqfkfcbwgss"
+path="res://.godot/imported/pink_mark.png-5114139bf3f47ca0f23772e82021c1bc.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/pink_mark.png"
+dest_files=["res://.godot/imported/pink_mark.png-5114139bf3f47ca0f23772e82021c1bc.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

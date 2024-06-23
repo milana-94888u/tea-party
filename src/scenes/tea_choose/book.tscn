@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://bo55lclof6yi5"]
+
+[ext_resource type="Script" path="res://src/scenes/tea_choose/book.gd" id="1_cryjv"]
+[ext_resource type="Texture2D" uid="uid://drf7k7ogfvr01" path="res://assets/book_open_wo_marks_1.png" id="2_0suiu"]
+[ext_resource type="Texture2D" uid="uid://bccidtnii8cxm" path="res://assets/book_open_wo_marks_2.png" id="3_evcm7"]
+[ext_resource type="Texture2D" uid="uid://c4oj5rqfkysji" path="res://assets/yellow_mark.png" id="3_nnnrw"]
+[ext_resource type="Texture2D" uid="uid://d26ybym2btwww" path="res://assets/book_open_wo_marks_3.png" id="4_88ctw"]
+[ext_resource type="BitMap" uid="uid://c6aayqvg165js" path="res://assets/as_bitmask/yellow_mark.png" id="4_trmig"]
+[ext_resource type="BitMap" uid="uid://c1shfpnf8vbb8" path="res://assets/as_bitmask/book_open_wo_marks_1.png" id="5_jfvpl"]
+[ext_resource type="Texture2D" uid="uid://cktihplk8q4np" path="res://assets/blue_mark.png" id="5_kr0kr"]
+[ext_resource type="BitMap" uid="uid://blbgum772141y" path="res://assets/as_bitmask/blue_mark.png" id="6_fsu5y"]
+[ext_resource type="Texture2D" uid="uid://djiek1pyimvl4" path="res://assets/pink_mark.png" id="7_ng0jj"]
+[ext_resource type="BitMap" uid="uid://bslqfkfcbwgss" path="res://assets/as_bitmask/pink_mark.png" id="8_0a1sb"]
+
+[node name="Book" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cryjv")
+yellow_page_texture = ExtResource("2_0suiu")
+blue_page_texture = ExtResource("3_evcm7")
+pink_page_texture = ExtResource("4_88ctw")
+
+[node name="OutsideSpace" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="BookDisplay" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_0suiu")
+texture_click_mask = ExtResource("5_jfvpl")
+
+[node name="YellowMark" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 692.0
+offset_right = 684.0
+offset_bottom = 1204.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_nnnrw")
+texture_click_mask = ExtResource("4_trmig")
+
+[node name="BlueMark" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 959.0
+offset_top = 679.0
+offset_right = 1471.0
+offset_bottom = 1191.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_kr0kr")
+texture_click_mask = ExtResource("6_fsu5y")
+
+[node name="PinkMark" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1254.0
+offset_top = 722.0
+offset_right = 1766.0
+offset_bottom = 1234.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_ng0jj")
+texture_click_mask = ExtResource("8_0a1sb")
+
+[connection signal="pressed" from="OutsideSpace" to="." method="_on_outside_space_pressed"]
+[connection signal="pressed" from="YellowMark" to="." method="_on_yellow_mark_pressed"]
+[connection signal="pressed" from="BlueMark" to="." method="_on_blue_mark_pressed"]
+[connection signal="pressed" from="PinkMark" to="." method="_on_pink_mark_pressed"]

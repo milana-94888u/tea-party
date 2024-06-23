@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=4 format=3 uid="uid://dyvattgxpc0el"]
 
-[ext_resource type="Texture2D" uid="uid://bvjiw0m6fg6ln" path="res://assets/background_scene_all.png" id="1_4jjw4"]
+[ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
+[ext_resource type="Texture2D" uid="uid://c5cgw5ytit845" path="res://assets/table.png" id="2_mxjnu"]
+[ext_resource type="Texture2D" uid="uid://b0q102v443u8x" path="res://assets/details on front.png" id="3_6bfes"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -17,6 +19,28 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_4jjw4")
+texture = ExtResource("1_p3who")
+expand_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="Table" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mxjnu")
+expand_mode = 3
+metadata/_edit_lock_ = true
+
+[node name="DetailsFront" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_6bfes")
 expand_mode = 3
 metadata/_edit_lock_ = true

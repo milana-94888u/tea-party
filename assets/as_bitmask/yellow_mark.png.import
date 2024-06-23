@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c6aayqvg165js"
+path="res://.godot/imported/yellow_mark.png-386de65a01702eda7aaa3fbadcbed514.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/yellow_mark.png"
+dest_files=["res://.godot/imported/yellow_mark.png-386de65a01702eda7aaa3fbadcbed514.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

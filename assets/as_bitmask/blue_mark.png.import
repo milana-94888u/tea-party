@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://blbgum772141y"
+path="res://.godot/imported/blue_mark.png-437a9f1b1b80545985b5c008a8572ddb.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/blue_mark.png"
+dest_files=["res://.godot/imported/blue_mark.png-437a9f1b1b80545985b5c008a8572ddb.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

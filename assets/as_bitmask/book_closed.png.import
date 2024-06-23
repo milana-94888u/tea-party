@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bn8lkc161k0tn"
+path="res://.godot/imported/book_closed.png-17c0b162633d995a5e9ca4d1ebe1ce10.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/book_closed.png"
+dest_files=["res://.godot/imported/book_closed.png-17c0b162633d995a5e9ca4d1ebe1ce10.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

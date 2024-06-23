@@ -8,6 +8,11 @@ enum CharacterState {
 }
 
 
+@onready var back_sprite := %CharacterBack as TextureRect
+@onready var cup_spot := %CupSpot as Control
+@onready var front_sprite := %CharacterFront as TextureRect
+
+
 @export var state := CharacterState.INITIAL
 
 
@@ -20,8 +25,9 @@ enum CharacterState {
 @export var filler_phrases: Array[String]
 
 
-@onready var cup_spot := $CupStop as Control
-
-
 func give_cup(cup: Cup) -> void:
-	cup.reparent(self, false)
+	cup.reparent(cup_spot, false)
+
+
+func evaluate_tea() -> void:
+	pass
