@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dgbu2fodeowvw"
+path="res://.godot/imported/mint.png-99ad5e86c06efbcba7a999bdaf4cdca7.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/mint.png"
+dest_files=["res://.godot/imported/mint.png-99ad5e86c06efbcba7a999bdaf4cdca7.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

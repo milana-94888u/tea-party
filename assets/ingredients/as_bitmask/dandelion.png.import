@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://043jx76xhua7"
+path="res://.godot/imported/dandelion.png-6a416c5074bec17b97ce22f42c555404.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/dandelion.png"
+dest_files=["res://.godot/imported/dandelion.png-6a416c5074bec17b97ce22f42c555404.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

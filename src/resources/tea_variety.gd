@@ -19,3 +19,7 @@ enum IngredientType {
 
 @export var effect: TeaEffect
 @export var ingredient_type: IngredientType
+
+
+@export var ingredient_sprite: Texture2D
+@export var click_mask: BitMap

@@ -1,6 +1,15 @@
 extends Control
 
 
+signal dialog_finished
+
+
+func _ready() -> void:
+	for character in characters:
+		display_dialog(character, character.introduction_dialog)
+		await dialog_finished
+
+
 @export var highlight_material: Material
 
 @onready var characters: Array[Character] = [%Selene, %Brokk, %Mel, %Vivienne, %Liam, %Om]
@@ -11,7 +20,7 @@ extends Control
 func display_dialog(character: Character, dialog: DialogData) -> void:
 	var tween := create_tween()
 	character.material = highlight_material
-	tween.tween_property(darkening_light, "energy", 0.5, 0.5)
+	tween.tween_property(darkening_light, "energy", 0.5, 1)
 	await tween.finished
 	var dialog_line := preload("res://src/scenes/ui/dialog_line.tscn").instantiate()
 	canvas_for_ui.add_child(dialog_line)
@@ -20,6 +29,7 @@ func display_dialog(character: Character, dialog: DialogData) -> void:
 		await dialog_line.requested_next_line
 	canvas_for_ui.remove_child(dialog_line)
 	tween = create_tween()
-	tween.tween_property(darkening_light, "energy", 0, 0.5)
+	tween.tween_property(darkening_light, "energy", 0, 1)
 	await tween.finished
 	character.material = null
+	dialog_finished.emit()

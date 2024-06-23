@@ -1,8 +1,12 @@
-[gd_resource type="Resource" script_class="TeaIngredient" load_steps=2 format=3 uid="uid://dqwk05j8mb5pl"]
+[gd_resource type="Resource" script_class="TeaIngredient" load_steps=4 format=3 uid="uid://dqwk05j8mb5pl"]
 
+[ext_resource type="BitMap" uid="uid://ddfj8a4gm8ic2" path="res://assets/ingredients/as_bitmask/camomile.png" id="1_7wbti"]
 [ext_resource type="Script" path="res://src/resources/tea_variety.gd" id="1_b4cm6"]
+[ext_resource type="Texture2D" uid="uid://ch4rfih6hhbg2" path="res://assets/ingredients/camomile.png" id="1_ryt0b"]
 
 [resource]
 script = ExtResource("1_b4cm6")
 effect = 0
 ingredient_type = 1
+ingredient_sprite = ExtResource("1_ryt0b")
+click_mask = ExtResource("1_7wbti")

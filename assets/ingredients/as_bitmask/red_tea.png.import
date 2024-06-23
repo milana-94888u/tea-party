@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b4ltfa44jgl4i"
+path="res://.godot/imported/red_tea.png-3061c39e0f72240a571d71e7871012b4.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/red_tea.png"
+dest_files=["res://.godot/imported/red_tea.png-3061c39e0f72240a571d71e7871012b4.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

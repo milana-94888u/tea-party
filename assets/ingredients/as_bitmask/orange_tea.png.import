@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cd4n6pp10bs30"
+path="res://.godot/imported/orange_tea.png-903804cb55e7b7c2b3ef30d38ccf7858.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/orange_tea.png"
+dest_files=["res://.godot/imported/orange_tea.png-903804cb55e7b7c2b3ef30d38ccf7858.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

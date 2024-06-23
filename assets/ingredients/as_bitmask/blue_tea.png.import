@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ccvkhpg0geyk8"
+path="res://.godot/imported/blue_tea.png-ad7a001dbbaefceb6a1e7fe49c2e0c66.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/blue_tea.png"
+dest_files=["res://.godot/imported/blue_tea.png-ad7a001dbbaefceb6a1e7fe49c2e0c66.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

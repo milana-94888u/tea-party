@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://yypt1opldt5c"
+path="res://.godot/imported/pomegranate.png-f4404061779c490d9abac13e8a205104.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/pomegranate.png"
+dest_files=["res://.godot/imported/pomegranate.png-f4404061779c490d9abac13e8a205104.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

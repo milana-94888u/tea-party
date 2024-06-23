@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ddfj8a4gm8ic2"
+path="res://.godot/imported/camomile.png-958b2c4b9bd9a173898a4db7c5b4b0a0.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/camomile.png"
+dest_files=["res://.godot/imported/camomile.png-958b2c4b9bd9a173898a4db7c5b4b0a0.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

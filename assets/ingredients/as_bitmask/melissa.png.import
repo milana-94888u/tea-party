@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bci52hfwi4pw3"
+path="res://.godot/imported/melissa.png-fb7c0b000369ffbc17f1aed2b31a5cf8.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/melissa.png"
+dest_files=["res://.godot/imported/melissa.png-fb7c0b000369ffbc17f1aed2b31a5cf8.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

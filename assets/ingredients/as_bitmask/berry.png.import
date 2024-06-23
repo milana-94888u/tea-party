@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://3eh3ejhiy02l"
+path="res://.godot/imported/berry.png-372201b041cbfe0af990a5703ca96bcc.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/berry.png"
+dest_files=["res://.godot/imported/berry.png-372201b041cbfe0af990a5703ca96bcc.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

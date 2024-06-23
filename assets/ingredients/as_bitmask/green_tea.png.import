@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bjbou4viydjqc"
+path="res://.godot/imported/green_tea.png-3e4aba81fcf90f98833e128de40f0eac.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/green_tea.png"
+dest_files=["res://.godot/imported/green_tea.png-3e4aba81fcf90f98833e128de40f0eac.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

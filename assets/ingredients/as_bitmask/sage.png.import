@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dq220hrkkxisi"
+path="res://.godot/imported/sage.png-3fdf9d8dee8ded3ba3e55c9eba2e338a.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/sage.png"
+dest_files=["res://.godot/imported/sage.png-3fdf9d8dee8ded3ba3e55c9eba2e338a.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

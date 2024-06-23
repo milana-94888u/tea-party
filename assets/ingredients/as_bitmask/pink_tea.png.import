@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c05wvqrwn4mdg"
+path="res://.godot/imported/pink_tea.png-d1b5b57d79fd64afe78f26c6cbaffa18.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/pink_tea.png"
+dest_files=["res://.godot/imported/pink_tea.png-d1b5b57d79fd64afe78f26c6cbaffa18.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

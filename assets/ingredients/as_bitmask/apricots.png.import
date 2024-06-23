@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://l5epp0kl7jes"
+path="res://.godot/imported/apricots.png-fb73109430add4607ab7092d189a9c4a.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/apricots.png"
+dest_files=["res://.godot/imported/apricots.png-fb73109430add4607ab7092d189a9c4a.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

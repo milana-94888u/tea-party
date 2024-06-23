@@ -1,8 +1,12 @@
-[gd_resource type="Resource" script_class="TeaIngredient" load_steps=2 format=3 uid="uid://c0ts11bq26fvg"]
+[gd_resource type="Resource" script_class="TeaIngredient" load_steps=4 format=3 uid="uid://c0ts11bq26fvg"]
 
 [ext_resource type="Script" path="res://src/resources/tea_variety.gd" id="1_anrph"]
+[ext_resource type="Texture2D" uid="uid://cvkwvsgq4j2w6" path="res://assets/ingredients/mint.png" id="1_sl037"]
+[ext_resource type="BitMap" uid="uid://dgbu2fodeowvw" path="res://assets/ingredients/as_bitmask/mint.png" id="1_xksyq"]
 
 [resource]
 script = ExtResource("1_anrph")
 effect = 1
 ingredient_type = 1
+ingredient_sprite = ExtResource("1_sl037")
+click_mask = ExtResource("1_xksyq")

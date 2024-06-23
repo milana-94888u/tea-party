@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dijcenuw13ae0"]
+
+[ext_resource type="Script" path="res://src/scenes/tea_choose/tea_ingredient.gd" id="1_qnxdg"]
+
+[node name="TeaIngredient" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_qnxdg")

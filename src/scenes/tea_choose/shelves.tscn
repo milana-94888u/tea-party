@@ -1,10 +1,65 @@
-[gd_scene load_steps=6 format=3 uid="uid://84qsrc7hkbyd"]
+[gd_scene load_steps=61 format=3 uid="uid://84qsrc7hkbyd"]
 
 [ext_resource type="Script" path="res://src/scenes/tea_choose/shelves.gd" id="1_7j330"]
 [ext_resource type="Texture2D" uid="uid://3u5iyj8s5wov" path="res://assets/shelfs.png" id="1_db7r3"]
 [ext_resource type="Texture2D" uid="uid://6i51xqg44v67" path="res://assets/book_closed.png" id="2_revxh"]
 [ext_resource type="PackedScene" uid="uid://bo55lclof6yi5" path="res://src/scenes/tea_choose/book.tscn" id="3_cyx5j"]
 [ext_resource type="BitMap" uid="uid://bn8lkc161k0tn" path="res://assets/as_bitmask/book_closed.png" id="3_tgnll"]
+[ext_resource type="BitMap" uid="uid://bjbou4viydjqc" path="res://assets/ingredients/as_bitmask/green_tea.png" id="5_5npgn"]
+[ext_resource type="Texture2D" uid="uid://csrw3pa8ebpvj" path="res://assets/ingredients/green_tea.png" id="5_lh37i"]
+[ext_resource type="PackedScene" uid="uid://dijcenuw13ae0" path="res://src/scenes/tea_choose/tea_ingredient.tscn" id="6_4h8w3"]
+[ext_resource type="Resource" uid="uid://dhvxga01h7bu5" path="res://resources/tea_varieties/base/green_tea.tres" id="6_wsjh6"]
+[ext_resource type="BitMap" uid="uid://clbyb0nxcc4we" path="res://assets/ingredients/as_bitmask/black_tea.png" id="7_u1h0j"]
+[ext_resource type="Texture2D" uid="uid://b1gmp7kw6fx68" path="res://assets/ingredients/black_tea.png" id="8_tubvs"]
+[ext_resource type="Texture2D" uid="uid://cyv3ccj4db1kg" path="res://assets/ingredients/blue_tea.png" id="9_djaeu"]
+[ext_resource type="Resource" uid="uid://brwwpf1m0xcw8" path="res://resources/tea_varieties/base/black_tea.tres" id="9_vk8dc"]
+[ext_resource type="BitMap" uid="uid://ccvkhpg0geyk8" path="res://assets/ingredients/as_bitmask/blue_tea.png" id="11_ohtpt"]
+[ext_resource type="Texture2D" uid="uid://bm18diyk23gft" path="res://assets/ingredients/pink_tea.png" id="12_40kuw"]
+[ext_resource type="Resource" uid="uid://c8qrrx3j2tait" path="res://resources/tea_varieties/base/blue_tea.tres" id="12_fn6w8"]
+[ext_resource type="BitMap" uid="uid://c05wvqrwn4mdg" path="res://assets/ingredients/as_bitmask/pink_tea.png" id="14_m6y5x"]
+[ext_resource type="Texture2D" uid="uid://c6lsgl2ykjbw0" path="res://assets/ingredients/red_tea.png" id="15_lbh2b"]
+[ext_resource type="Resource" uid="uid://dbfqhpnqrw11q" path="res://resources/tea_varieties/base/pink_tea.tres" id="15_tnv7y"]
+[ext_resource type="BitMap" uid="uid://b4ltfa44jgl4i" path="res://assets/ingredients/as_bitmask/red_tea.png" id="17_i10rf"]
+[ext_resource type="Texture2D" uid="uid://qumvk5m731vk" path="res://assets/ingredients/orange_tea.png" id="18_6fnh6"]
+[ext_resource type="Resource" uid="uid://b2ek4h84tkyv1" path="res://resources/tea_varieties/base/red_tea.tres" id="18_chfie"]
+[ext_resource type="BitMap" uid="uid://cd4n6pp10bs30" path="res://assets/ingredients/as_bitmask/orange_tea.png" id="20_qt03j"]
+[ext_resource type="Resource" uid="uid://cr3fs0eeu12dy" path="res://resources/tea_varieties/base/orange_tea.tres" id="21_aduxv"]
+[ext_resource type="Texture2D" uid="uid://ch4rfih6hhbg2" path="res://assets/ingredients/camomile.png" id="22_yph0o"]
+[ext_resource type="BitMap" uid="uid://ddfj8a4gm8ic2" path="res://assets/ingredients/as_bitmask/camomile.png" id="23_vcom8"]
+[ext_resource type="Resource" uid="uid://dqwk05j8mb5pl" path="res://resources/tea_varieties/flowers/camomile.tres" id="24_linaw"]
+[ext_resource type="Texture2D" uid="uid://6berrqo7gcy7" path="res://assets/ingredients/melissa.png" id="25_kqtig"]
+[ext_resource type="BitMap" uid="uid://bci52hfwi4pw3" path="res://assets/ingredients/as_bitmask/melissa.png" id="26_bdnq3"]
+[ext_resource type="Resource" uid="uid://d2j0vte26o57m" path="res://resources/tea_varieties/flowers/melissa.tres" id="27_0qpjc"]
+[ext_resource type="Texture2D" uid="uid://csjvmt0k0fljw" path="res://assets/ingredients/nettle.png" id="28_gy6m7"]
+[ext_resource type="Texture2D" uid="uid://cvkwvsgq4j2w6" path="res://assets/ingredients/mint.png" id="28_oveua"]
+[ext_resource type="BitMap" uid="uid://dgbu2fodeowvw" path="res://assets/ingredients/as_bitmask/mint.png" id="29_5t2dm"]
+[ext_resource type="BitMap" uid="uid://2pgfhd0pipbq" path="res://assets/ingredients/as_bitmask/nettle.png" id="29_rf25a"]
+[ext_resource type="Resource" uid="uid://bcgs2yb7srhqc" path="res://resources/tea_varieties/flowers/nettle.tres" id="30_4v6ix"]
+[ext_resource type="Resource" uid="uid://c0ts11bq26fvg" path="res://resources/tea_varieties/flowers/mint.tres" id="30_j3p5y"]
+[ext_resource type="Texture2D" uid="uid://iefaf45fdera" path="res://assets/ingredients/dandelion.png" id="34_fe8tk"]
+[ext_resource type="BitMap" uid="uid://043jx76xhua7" path="res://assets/ingredients/as_bitmask/dandelion.png" id="35_mqo8k"]
+[ext_resource type="Resource" uid="uid://cecgx63uoieor" path="res://resources/tea_varieties/flowers/dandelions.tres" id="36_fa2ll"]
+[ext_resource type="Texture2D" uid="uid://dvonkj8217liy" path="res://assets/ingredients/sage.png" id="37_k6cmj"]
+[ext_resource type="BitMap" uid="uid://dq220hrkkxisi" path="res://assets/ingredients/as_bitmask/sage.png" id="38_6yo3y"]
+[ext_resource type="Resource" uid="uid://da1vksuy6j62w" path="res://resources/tea_varieties/flowers/sage.tres" id="39_jlowq"]
+[ext_resource type="Texture2D" uid="uid://dl4mmhsp0s2pe" path="res://assets/ingredients/berry.png" id="40_yjpl5"]
+[ext_resource type="BitMap" uid="uid://3eh3ejhiy02l" path="res://assets/ingredients/as_bitmask/berry.png" id="41_vvp34"]
+[ext_resource type="Resource" uid="uid://447hflvosclq" path="res://resources/tea_varieties/fruit_bits/wild_berries.tres" id="42_4vu3y"]
+[ext_resource type="Texture2D" uid="uid://bap2ys02ve2id" path="res://assets/ingredients/citrus.png" id="43_5ew36"]
+[ext_resource type="BitMap" uid="uid://bikhwsx4rii3y" path="res://assets/ingredients/as_bitmask/citrus.png" id="44_xgc3d"]
+[ext_resource type="Resource" uid="uid://wpe4xree2ruk" path="res://resources/tea_varieties/fruit_bits/citrus.tres" id="45_at6dl"]
+[ext_resource type="Texture2D" uid="uid://ce3pj5k7rgxph" path="res://assets/ingredients/apple.png" id="46_m0ewe"]
+[ext_resource type="BitMap" uid="uid://cu0qn8qm24v08" path="res://assets/ingredients/as_bitmask/apple.png" id="47_g5007"]
+[ext_resource type="Resource" uid="uid://b1kjxxieosygr" path="res://resources/tea_varieties/fruit_bits/apple.tres" id="48_rqfhm"]
+[ext_resource type="Texture2D" uid="uid://dst75lhs82krm" path="res://assets/ingredients/pomegranate.png" id="49_l16yx"]
+[ext_resource type="BitMap" uid="uid://yypt1opldt5c" path="res://assets/ingredients/as_bitmask/pomegranate.png" id="50_sfhn3"]
+[ext_resource type="Resource" uid="uid://bdl1dt2anlopa" path="res://resources/tea_varieties/fruit_bits/pomegranate.tres" id="51_uuciv"]
+[ext_resource type="Texture2D" uid="uid://d1mr00c3uo0fa" path="res://assets/ingredients/apricots.png" id="52_dk1kn"]
+[ext_resource type="BitMap" uid="uid://l5epp0kl7jes" path="res://assets/ingredients/as_bitmask/apricots.png" id="53_38kw2"]
+[ext_resource type="Resource" uid="uid://bi4mviuew0rte" path="res://resources/tea_varieties/fruit_bits/apricots.tres" id="54_vapfg"]
+[ext_resource type="Texture2D" uid="uid://pbu8nb3cm4k1" path="res://assets/ingredients/cherry.png" id="55_g2ah7"]
+[ext_resource type="BitMap" uid="uid://bdqmcviglwx1y" path="res://assets/ingredients/as_bitmask/cherry.png" id="56_bi538"]
+[ext_resource type="Resource" uid="uid://chfnuedk3q1qm" path="res://resources/tea_varieties/fruit_bits/cherries.tres" id="57_44yxe"]
 
 [node name="Shelves" type="Control"]
 layout_mode = 3
@@ -24,6 +79,380 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_db7r3")
 metadata/_edit_lock_ = true
+
+[node name="Ingredients" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 190.0
+offset_right = 2828.0
+offset_bottom = 990.0
+scale = Vector2(0.65, 0.65)
+theme_override_constants/separation = 48
+
+[node name="Base" type="GridContainer" parent="Ingredients"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/v_separation = 200
+columns = 3
+metadata/_edit_lock_ = true
+
+[node name="Spot1" type="MarginContainer" parent="Ingredients/Base"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="GreenTea" parent="Ingredients/Base/Spot1" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("5_lh37i")
+texture_pressed = ExtResource("5_lh37i")
+texture_hover = ExtResource("5_lh37i")
+texture_disabled = ExtResource("5_lh37i")
+texture_focused = ExtResource("5_lh37i")
+texture_click_mask = ExtResource("5_5npgn")
+ingredient_data = ExtResource("6_wsjh6")
+
+[node name="Spot2" type="MarginContainer" parent="Ingredients/Base"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="BlackTea" parent="Ingredients/Base/Spot2" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("8_tubvs")
+texture_pressed = ExtResource("8_tubvs")
+texture_hover = ExtResource("8_tubvs")
+texture_disabled = ExtResource("8_tubvs")
+texture_focused = ExtResource("8_tubvs")
+texture_click_mask = ExtResource("7_u1h0j")
+ingredient_data = ExtResource("9_vk8dc")
+
+[node name="Spot3" type="MarginContainer" parent="Ingredients/Base"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="BlueTea" parent="Ingredients/Base/Spot3" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("9_djaeu")
+texture_pressed = ExtResource("9_djaeu")
+texture_hover = ExtResource("9_djaeu")
+texture_disabled = ExtResource("9_djaeu")
+texture_focused = ExtResource("9_djaeu")
+texture_click_mask = ExtResource("11_ohtpt")
+ingredient_data = ExtResource("12_fn6w8")
+
+[node name="Spot4" type="MarginContainer" parent="Ingredients/Base"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="PinkTea" parent="Ingredients/Base/Spot4" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("12_40kuw")
+texture_pressed = ExtResource("12_40kuw")
+texture_hover = ExtResource("12_40kuw")
+texture_disabled = ExtResource("12_40kuw")
+texture_focused = ExtResource("12_40kuw")
+texture_click_mask = ExtResource("14_m6y5x")
+ingredient_data = ExtResource("15_tnv7y")
+
+[node name="Spot5" type="MarginContainer" parent="Ingredients/Base"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="RedTea" parent="Ingredients/Base/Spot5" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("15_lbh2b")
+texture_pressed = ExtResource("15_lbh2b")
+texture_hover = ExtResource("15_lbh2b")
+texture_disabled = ExtResource("15_lbh2b")
+texture_focused = ExtResource("15_lbh2b")
+texture_click_mask = ExtResource("17_i10rf")
+ingredient_data = ExtResource("18_chfie")
+
+[node name="Spot6" type="MarginContainer" parent="Ingredients/Base"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="OrangeTea" parent="Ingredients/Base/Spot6" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("18_6fnh6")
+texture_pressed = ExtResource("18_6fnh6")
+texture_hover = ExtResource("18_6fnh6")
+texture_disabled = ExtResource("18_6fnh6")
+texture_focused = ExtResource("18_6fnh6")
+texture_click_mask = ExtResource("20_qt03j")
+ingredient_data = ExtResource("21_aduxv")
+
+[node name="Flower" type="GridContainer" parent="Ingredients"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/v_separation = 200
+columns = 3
+metadata/_edit_lock_ = true
+
+[node name="Spot1" type="MarginContainer" parent="Ingredients/Flower"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Camomile" parent="Ingredients/Flower/Spot1" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("22_yph0o")
+texture_pressed = ExtResource("22_yph0o")
+texture_hover = ExtResource("22_yph0o")
+texture_disabled = ExtResource("22_yph0o")
+texture_focused = ExtResource("22_yph0o")
+texture_click_mask = ExtResource("23_vcom8")
+ingredient_data = ExtResource("24_linaw")
+metadata/_edit_lock_ = true
+
+[node name="Spot2" type="MarginContainer" parent="Ingredients/Flower"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Melissa" parent="Ingredients/Flower/Spot2" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("25_kqtig")
+texture_pressed = ExtResource("25_kqtig")
+texture_hover = ExtResource("25_kqtig")
+texture_disabled = ExtResource("25_kqtig")
+texture_focused = ExtResource("25_kqtig")
+texture_click_mask = ExtResource("26_bdnq3")
+ingredient_data = ExtResource("27_0qpjc")
+metadata/_edit_lock_ = true
+
+[node name="Spot3" type="MarginContainer" parent="Ingredients/Flower"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Mint" parent="Ingredients/Flower/Spot3" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("28_oveua")
+texture_pressed = ExtResource("28_oveua")
+texture_hover = ExtResource("28_oveua")
+texture_disabled = ExtResource("28_oveua")
+texture_focused = ExtResource("28_oveua")
+texture_click_mask = ExtResource("29_5t2dm")
+ingredient_data = ExtResource("30_j3p5y")
+metadata/_edit_lock_ = true
+
+[node name="Spot4" type="MarginContainer" parent="Ingredients/Flower"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Nettle" parent="Ingredients/Flower/Spot4" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("28_gy6m7")
+texture_pressed = ExtResource("28_gy6m7")
+texture_hover = ExtResource("28_gy6m7")
+texture_disabled = ExtResource("28_gy6m7")
+texture_focused = ExtResource("28_gy6m7")
+texture_click_mask = ExtResource("29_rf25a")
+ingredient_data = ExtResource("30_4v6ix")
+metadata/_edit_lock_ = true
+
+[node name="Spot5" type="MarginContainer" parent="Ingredients/Flower"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Dandelion" parent="Ingredients/Flower/Spot5" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("34_fe8tk")
+texture_pressed = ExtResource("34_fe8tk")
+texture_hover = ExtResource("34_fe8tk")
+texture_disabled = ExtResource("34_fe8tk")
+texture_focused = ExtResource("34_fe8tk")
+texture_click_mask = ExtResource("35_mqo8k")
+ingredient_data = ExtResource("36_fa2ll")
+metadata/_edit_lock_ = true
+
+[node name="Spot6" type="MarginContainer" parent="Ingredients/Flower"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Sage" parent="Ingredients/Flower/Spot6" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("37_k6cmj")
+texture_pressed = ExtResource("37_k6cmj")
+texture_hover = ExtResource("37_k6cmj")
+texture_disabled = ExtResource("37_k6cmj")
+texture_focused = ExtResource("37_k6cmj")
+texture_click_mask = ExtResource("38_6yo3y")
+ingredient_data = ExtResource("39_jlowq")
+
+[node name="FruitBits" type="GridContainer" parent="Ingredients"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/v_separation = 200
+columns = 3
+metadata/_edit_lock_ = true
+
+[node name="Spot1" type="MarginContainer" parent="Ingredients/FruitBits"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="WildBerries" parent="Ingredients/FruitBits/Spot1" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("40_yjpl5")
+texture_pressed = ExtResource("40_yjpl5")
+texture_hover = ExtResource("40_yjpl5")
+texture_disabled = ExtResource("40_yjpl5")
+texture_focused = ExtResource("40_yjpl5")
+texture_click_mask = ExtResource("41_vvp34")
+ingredient_data = ExtResource("42_4vu3y")
+metadata/_edit_lock_ = true
+
+[node name="Spot2" type="MarginContainer" parent="Ingredients/FruitBits"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Citrus" parent="Ingredients/FruitBits/Spot2" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("43_5ew36")
+texture_pressed = ExtResource("43_5ew36")
+texture_hover = ExtResource("43_5ew36")
+texture_disabled = ExtResource("43_5ew36")
+texture_focused = ExtResource("43_5ew36")
+texture_click_mask = ExtResource("44_xgc3d")
+ingredient_data = ExtResource("45_at6dl")
+metadata/_edit_lock_ = true
+
+[node name="Spot3" type="MarginContainer" parent="Ingredients/FruitBits"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Apple" parent="Ingredients/FruitBits/Spot3" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("46_m0ewe")
+texture_pressed = ExtResource("46_m0ewe")
+texture_hover = ExtResource("46_m0ewe")
+texture_disabled = ExtResource("46_m0ewe")
+texture_focused = ExtResource("46_m0ewe")
+texture_click_mask = ExtResource("47_g5007")
+ingredient_data = ExtResource("48_rqfhm")
+metadata/_edit_lock_ = true
+
+[node name="Spot4" type="MarginContainer" parent="Ingredients/FruitBits"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Pomegranate" parent="Ingredients/FruitBits/Spot4" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("49_l16yx")
+texture_pressed = ExtResource("49_l16yx")
+texture_hover = ExtResource("49_l16yx")
+texture_disabled = ExtResource("49_l16yx")
+texture_focused = ExtResource("49_l16yx")
+texture_click_mask = ExtResource("50_sfhn3")
+ingredient_data = ExtResource("51_uuciv")
+metadata/_edit_lock_ = true
+
+[node name="Spot5" type="MarginContainer" parent="Ingredients/FruitBits"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Apricots" parent="Ingredients/FruitBits/Spot5" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("52_dk1kn")
+texture_pressed = ExtResource("52_dk1kn")
+texture_hover = ExtResource("52_dk1kn")
+texture_disabled = ExtResource("52_dk1kn")
+texture_focused = ExtResource("52_dk1kn")
+texture_click_mask = ExtResource("53_38kw2")
+ingredient_data = ExtResource("54_vapfg")
+metadata/_edit_lock_ = true
+
+[node name="Spot6" type="MarginContainer" parent="Ingredients/FruitBits"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Cherries" parent="Ingredients/FruitBits/Spot6" instance=ExtResource("6_4h8w3")]
+layout_mode = 2
+texture_normal = ExtResource("55_g2ah7")
+texture_pressed = ExtResource("55_g2ah7")
+texture_hover = ExtResource("55_g2ah7")
+texture_disabled = ExtResource("55_g2ah7")
+texture_focused = ExtResource("55_g2ah7")
+texture_click_mask = ExtResource("56_bi538")
+ingredient_data = ExtResource("57_44yxe")
+metadata/_edit_lock_ = true
+
+[node name="BaseSpot" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 1037.0
+offset_top = 695.0
+offset_right = 1077.0
+offset_bottom = 735.0
+scale = Vector2(1.3, 1.3)
+
+[node name="FlowerSpot" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 1264.0
+offset_top = 685.0
+offset_right = 1304.0
+offset_bottom = 725.0
+scale = Vector2(1.3, 1.3)
+
+[node name="FruitBitsSpot" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 1546.0
+offset_top = 690.0
+offset_right = 1586.0
+offset_bottom = 730.0
+scale = Vector2(1.3, 1.3)
 
 [node name="ClosedBook" type="TextureButton" parent="."]
 layout_mode = 1

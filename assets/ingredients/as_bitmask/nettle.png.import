@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://2pgfhd0pipbq"
+path="res://.godot/imported/nettle.png-40b44264e40cd5a44a769e6193baa45d.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/nettle.png"
+dest_files=["res://.godot/imported/nettle.png-40b44264e40cd5a44a769e6193baa45d.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

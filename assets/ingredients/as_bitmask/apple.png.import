@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cu0qn8qm24v08"
+path="res://.godot/imported/apple.png-cc423c3fd00bbec9d44151ef5546c770.res"
+
+[deps]
+
+source_file="res://assets/ingredients/as_bitmask/apple.png"
+dest_files=["res://.godot/imported/apple.png-cc423c3fd00bbec9d44151ef5546c770.res"]
+
+[params]
+
+create_from=0
+threshold=0.0
