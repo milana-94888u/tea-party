@@ -1,13 +1,10 @@
 extends Control
 
 
-signal dialog_finished
-
-
 func _ready() -> void:
 	for character in characters:
-		display_dialog(character, character.introduction_dialog)
-		await dialog_finished
+		if character.introduction_dialog:
+			await display_dialog(character, character.introduction_dialog)
 
 
 @export var highlight_material: Material
@@ -27,9 +24,21 @@ func display_dialog(character: Character, dialog: DialogData) -> void:
 	for line in dialog.lines:
 		dialog_line.dialog_line_data = line
 		await dialog_line.requested_next_line
-	canvas_for_ui.remove_child(dialog_line)
+	dialog_line.queue_free()
 	tween = create_tween()
 	tween.tween_property(darkening_light, "energy", 0, 1)
 	await tween.finished
 	character.material = null
-	dialog_finished.emit()
+
+
+func choose_tea() -> Tea:
+	var shelves := preload("res://src/scenes/tea_choose/shelves.tscn").instantiate()
+	hide()
+	add_sibling.call_deferred(shelves)
+	shelves.show()
+	var tea: Tea = await shelves.tea_completed
+	shelves.queue_free()
+	show()
+	return tea
+
+
