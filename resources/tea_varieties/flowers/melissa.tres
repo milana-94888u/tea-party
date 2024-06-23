@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TeaIngredient" load_steps=2 format=3 uid="uid://d2j0vte26o57m"]
+
+[ext_resource type="Script" path="res://src/resources/tea_variety.gd" id="1_gofsc"]
+
+[resource]
+script = ExtResource("1_gofsc")
+effect = 5
+ingredient_type = 1

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CharacterData" load_steps=2 format=3 uid="uid://bkawa07t0v1ux"]
+
+[ext_resource type="Script" path="res://src/resources/character_data.gd" id="1_4tkay"]
+
+[resource]
+script = ExtResource("1_4tkay")
+desired_effect = 0
+undesired_effect = 0
+name = "mel"
