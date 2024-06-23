@@ -11,6 +11,10 @@ signal requested_next_line
 @onready var line_text := %LineText as Label
 
 
+func replace_placeholders(text: String) -> String:
+	return text.replace("*name*", "Test")
+
+
 @export var dialog_line_data: DialogLineData:
 	set(value):
 		dialog_line_data = value
@@ -25,7 +29,7 @@ signal requested_next_line
 		sprite_back.texture = dialog_line_data.character.back_sprite_base
 		sprite_front.texture = dialog_line_data.character.front_sprite_base
 		title.text = dialog_line_data.character.name
-		line_text.text = dialog_line_data.text
+		line_text.text = replace_placeholders(dialog_line_data.text)
 
 
 func _on_click_preventing_background_pressed() -> void:

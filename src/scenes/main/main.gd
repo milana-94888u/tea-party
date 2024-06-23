@@ -1,10 +1,11 @@
 extends Control
 
 
+@export var introduction_dialog: DialogData
+
+
 func _ready() -> void:
-	for character in characters:
-		if character.introduction_dialog:
-			await display_dialog(character, character.introduction_dialog)
+	await display_dialog(%Mel, introduction_dialog)
 
 
 @export var highlight_material: Material

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=19 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -14,37 +14,27 @@
 [ext_resource type="Resource" uid="uid://ceeqxdqudfeq7" path="res://resources/characters/liam.tres" id="8_s2x27"]
 [ext_resource type="Script" path="res://src/resources/dialog_data.gd" id="9_tlpgv"]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b8ujo"]
-light_mode = 1
-
-[sub_resource type="Resource" id="Resource_fk0xm"]
-script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([])
-
-[sub_resource type="Resource" id="Resource_ic7mp"]
+[sub_resource type="Resource" id="Resource_ppora"]
 script = ExtResource("7_v73w7")
 character = ExtResource("6_2dxjs")
-text = "meow"
+text = "Thank you all for coming to this ceremony. It’s been a while. "
 
-[sub_resource type="Resource" id="Resource_vn5t5"]
-script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ic7mp")])
+[sub_resource type="Resource" id="Resource_8agmq"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Recently I had some troubles doing everything on my own. I needed to find an assistant and as you can see, there’s a new face in the crowd. Welcome, *name*!"
 
-[sub_resource type="Resource" id="Resource_vk7ak"]
-script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([])
+[sub_resource type="Resource" id="Resource_1dwxd"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "They’re going to be making today’s tea, so you’re up to criticize them for it. They’ll need to know what everyone likes"
 
-[sub_resource type="Resource" id="Resource_8ymw0"]
+[sub_resource type="Resource" id="Resource_bot4m"]
 script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([])
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ppora"), SubResource("Resource_8agmq"), SubResource("Resource_1dwxd")])
 
-[sub_resource type="Resource" id="Resource_md81o"]
-script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([])
-
-[sub_resource type="Resource" id="Resource_t56jr"]
-script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([])
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b8ujo"]
+light_mode = 1
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -54,6 +44,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bmpws")
+introduction_dialog = SubResource("Resource_bot4m")
 highlight_material = SubResource("CanvasItemMaterial_b8ujo")
 
 [node name="Background" type="TextureRect" parent="."]
@@ -93,7 +84,6 @@ offset_right = 63.0
 offset_bottom = 191.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("4_4k6hw")
-introduction_dialog = SubResource("Resource_fk0xm")
 
 [node name="Brokk" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -104,7 +94,6 @@ offset_right = 317.0
 offset_bottom = 160.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("5_0ci1l")
-introduction_dialog = SubResource("Resource_vn5t5")
 
 [node name="Mel" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -115,7 +104,6 @@ offset_right = 604.0
 offset_bottom = 85.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("6_2dxjs")
-introduction_dialog = SubResource("Resource_vk7ak")
 
 [node name="Vivienne" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -126,7 +114,6 @@ offset_right = 861.0
 offset_bottom = 108.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("7_cmgwm")
-introduction_dialog = SubResource("Resource_8ymw0")
 
 [node name="Liam" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -137,7 +124,6 @@ offset_right = 1162.0
 offset_bottom = 136.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_s2x27")
-introduction_dialog = SubResource("Resource_md81o")
 
 [node name="Om" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -148,7 +134,6 @@ offset_right = 1429.0
 offset_bottom = 153.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_eijjg")
-introduction_dialog = SubResource("Resource_t56jr")
 
 [node name="DetailsFront" type="TextureRect" parent="."]
 layout_mode = 1

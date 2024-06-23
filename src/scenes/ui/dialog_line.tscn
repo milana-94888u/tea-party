@@ -92,7 +92,6 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Hello"
 horizontal_alignment = 1
-vertical_alignment = 1
 autowrap_mode = 3
 
 [connection signal="pressed" from="ClickPreventingBackground" to="." method="_on_click_preventing_background_pressed"]
