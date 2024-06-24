@@ -5,17 +5,20 @@ extends Node
 @export var pronouns_nominative: String
 @export var pronouns_accusative: String
 @export var was_started := false
+@export var is_full := false
 
 
 func start_game(
 	player_name_: String,
 	pronouns_nominative_: String,
-	pronouns_accusative_: String
+	pronouns_accusative_: String,
+	is_full_ := false,
 ) -> void:
 	was_started = true
 	player_name = player_name_
 	pronouns_nominative = pronouns_nominative_
 	pronouns_accusative = pronouns_accusative_
+	is_full = is_full_
 
 
 func replace_placeholders(text: String) -> String:

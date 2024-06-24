@@ -4,8 +4,9 @@ extends Control
 @onready var name_line := %NameLine as LineEdit
 @onready var pronouns_line := %PronounsLine as LineEdit
 @onready var pronouns_options := %PronounsOptions as OptionButton
-@onready var start_button := %StartButton as Button
 @onready var tutorial_button := %TutorialButton as Button
+@onready var short_game_button := %ShortGameButton as Button
+@onready var full_story_button := %FullStoryButton as Button
 
 
 func _ready() -> void:
@@ -40,13 +41,6 @@ func _on_pronouns_options_item_selected(index: int) -> void:
 		pronouns_line.editable = true
 
 
-func _on_start_button_pressed() -> void:
-	SfxPlayer.play_sound_effect(Sounds.button)
-	var pronouns := pronouns_line.text.split("/", true, 2)
-	PlayerData.start_game(name_line.text, pronouns[0], pronouns[1])
-	get_tree().change_scene_to_file("res://src/scenes/main/main.tscn")
-
-
 func validate_alnum(text: String) -> bool:
 	var regex := RegEx.create_from_string("[\\w ]+")
 	var regex_match := regex.search(text)
@@ -65,20 +59,24 @@ func validate_pronouns(text: String) -> bool:
 
 func _on_name_line_text_changed(new_text: String) -> void:
 	if validate_alnum(new_text):
-		start_button.disabled = false
 		tutorial_button.disabled = false
+		short_game_button.disabled = false
+		full_story_button.disabled = false
 	else:
-		start_button.disabled = true
 		tutorial_button.disabled = true
+		short_game_button.disabled = true
+		full_story_button.disabled = true
 
 
 func _on_pronouns_line_text_changed(new_text: String) -> void:
 	if validate_pronouns(new_text):
-		start_button.disabled = false
 		tutorial_button.disabled = false
+		short_game_button.disabled = false
+		full_story_button.disabled = false
 	else:
-		start_button.disabled = true
 		tutorial_button.disabled = true
+		short_game_button.disabled = true
+		full_story_button.disabled = true
 
 
 func _on_tutorial_button_pressed() -> void:
@@ -86,3 +84,17 @@ func _on_tutorial_button_pressed() -> void:
 	var pronouns := pronouns_line.text.split("/", true, 2)
 	PlayerData.start_game(name_line.text, pronouns[0], pronouns[1])
 	get_tree().change_scene_to_file("res://src/scenes/learning/empty_main.tscn")
+
+
+func _on_short_game_button_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
+	var pronouns := pronouns_line.text.split("/", true, 2)
+	PlayerData.start_game(name_line.text, pronouns[0], pronouns[1])
+	get_tree().change_scene_to_file("res://src/scenes/main/main.tscn")
+
+
+func _on_full_story_button_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
+	var pronouns := pronouns_line.text.split("/", true, 2)
+	PlayerData.start_game(name_line.text, pronouns[0], pronouns[1], true)
+	get_tree().change_scene_to_file("res://src/scenes/main/main.tscn")
