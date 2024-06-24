@@ -48,6 +48,9 @@ func get_spot_for_ingredient(ingredient_data: TeaIngredient) -> Control:
 
 
 func on_ingredient_clicked(ingredient: TeaIngredientButton) -> void:
+	SfxPlayer.play_sound_effect(
+		[Sounds.collecting_ingredient1, Sounds.collecting_ingredient2].pick_random()
+	)
 	if is_instance_valid(ingredient.original_spot):
 		return_ingredient_back(ingredient)
 		return
@@ -72,6 +75,7 @@ func _ready() -> void:
 
 
 func _on_closed_book_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.book_open)
 	closed_book.hide()
 	open_book.show()
 	await open_book.hidden

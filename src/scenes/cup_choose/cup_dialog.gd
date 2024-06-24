@@ -14,4 +14,5 @@ func _ready() -> void:
 
 
 func on_cup_clicked(cup: Cup) -> void:
+	SfxPlayer.play_sound_effect(Sounds.picking_up_cup)
 	cup_chosen.emit(cup)

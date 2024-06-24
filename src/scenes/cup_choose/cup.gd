@@ -20,6 +20,7 @@ extends TextureButton
 
 
 func spill_tea(tea: Tea) -> void:
+	SfxPlayer.play_sound_effect(Sounds.tea_pour)
 	spilled_sprite.texture = tea.base.tea_in_cup
 
 

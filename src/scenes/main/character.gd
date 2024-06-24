@@ -54,6 +54,7 @@ func set_correct_sprites() -> void:
 
 
 func give_cup(cup: Cup) -> void:
+	SfxPlayer.play_sound_effect(Sounds.putting_down_cup)
 	cup.reparent(cup_spot, false)
 	cup.position = Vector2.ZERO
 	has_cup = true
@@ -73,6 +74,7 @@ func spill_tea(tea: Tea) -> void:
 
 func consume_and_evaluate_tea(tea: Tea) -> DialogData:
 	(cup_spot.get_child(0) as Cup).empty_cup()
+	SfxPlayer.play_sound_effect(Sounds.drinking_tea)
 	var score := 0
 	for effect in [tea.base.effect, tea.flowers.effect, tea.fruit_bits.effect]:
 		if effect in character_data.desired_effects:

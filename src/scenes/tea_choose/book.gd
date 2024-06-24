@@ -10,16 +10,20 @@ extends Control
 
 
 func _on_yellow_mark_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.page_flip)
 	book_display.texture_normal = yellow_page_texture
 
 
 func _on_blue_mark_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.page_flip)
 	book_display.texture_normal = blue_page_texture
 
 
 func _on_pink_mark_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.page_flip)
 	book_display.texture_normal = pink_page_texture
 
 
 func _on_outside_space_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.book_close)
 	hide()

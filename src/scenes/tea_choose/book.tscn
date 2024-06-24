@@ -73,6 +73,14 @@ mouse_default_cursor_shape = 2
 texture_normal = ExtResource("7_ng0jj")
 texture_click_mask = ExtResource("8_0a1sb")
 
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 168.0
+offset_right = 1546.0
+offset_bottom = 808.0
+columns = 2
+
 [connection signal="pressed" from="OutsideSpace" to="." method="_on_outside_space_pressed"]
 [connection signal="pressed" from="YellowMark" to="." method="_on_yellow_mark_pressed"]
 [connection signal="pressed" from="BlueMark" to="." method="_on_blue_mark_pressed"]
