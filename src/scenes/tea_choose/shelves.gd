@@ -53,6 +53,7 @@ func on_ingredient_clicked(ingredient: TeaIngredientButton) -> void:
 	)
 	if is_instance_valid(ingredient.original_spot):
 		return_ingredient_back(ingredient)
+		check_completed()
 		return
 	var spot_to_put := get_spot_for_ingredient(ingredient.ingredient_data)
 	if spot_to_put.get_child_count():
