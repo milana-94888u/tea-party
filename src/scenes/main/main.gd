@@ -24,6 +24,8 @@ func _ready() -> void:
 	for i in 3:
 		var tea := await choose_tea()
 		await spill_tea(tea)
+	var finishing_screen := preload("res://src/scenes/ui/finishing_screen.tscn").instantiate()
+	canvas_for_ui.add_child.call_deferred(finishing_screen)
 
 
 @export var highlight_material: Material
