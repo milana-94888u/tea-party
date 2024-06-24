@@ -35,7 +35,7 @@ func _ready() -> void:
 	else:
 		for i in 3:
 			await spill_tea(await choose_tea())
-	display_dialog(%Mel, outroduction_dialog)
+	await display_dialog(%Mel, outroduction_dialog)
 	var finishing_screen := preload("res://src/scenes/ui/finishing_screen.tscn").instantiate()
 	canvas_for_ui.add_child.call_deferred(finishing_screen)
 
