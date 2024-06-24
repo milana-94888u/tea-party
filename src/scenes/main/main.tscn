@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=65 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -13,6 +13,7 @@
 [ext_resource type="Resource" uid="uid://cktjktliysf5n" path="res://resources/characters/om.tres" id="8_eijjg"]
 [ext_resource type="Resource" uid="uid://ceeqxdqudfeq7" path="res://resources/characters/liam.tres" id="8_s2x27"]
 [ext_resource type="Script" path="res://src/resources/dialog_data.gd" id="9_tlpgv"]
+[ext_resource type="Resource" uid="uid://c0sypo4qwbfah" path="res://resources/characters/you.tres" id="13_rff66"]
 [ext_resource type="PackedScene" uid="uid://dtpgi8ckq271b" path="res://src/scenes/cup_choose/cup_dialog.tscn" id="15_tn5o8"]
 
 [sub_resource type="Resource" id="Resource_ppora"]
@@ -36,6 +37,215 @@ lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ppora"), SubResourc
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b8ujo"]
 light_mode = 1
+
+[sub_resource type="Resource" id="Resource_16fla"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I am not drinking that, sorry."
+
+[sub_resource type="Resource" id="Resource_h8lxk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Really? But it’s good!"
+
+[sub_resource type="Resource" id="Resource_r0u5m"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Viv is being too harsh again."
+
+[sub_resource type="Resource" id="Resource_5dmt7"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I’m not harsh, I’m honest!"
+
+[sub_resource type="Resource" id="Resource_1u0tw"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Let’s not fight just because Viv likes plain and bitter teas."
+
+[sub_resource type="Resource" id="Resource_rrul8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "We’re not, we’re just surprised."
+
+[sub_resource type="Resource" id="Resource_6ls0d"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Like it’s the first time you see Viv complaining. She is honest about her tastes."
+
+[sub_resource type="Resource" id="Resource_h4iyd"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Good point."
+
+[sub_resource type="Resource" id="Resource_kjfxx"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Yeah! And I’m just so special, you know. There isn't anyone with taste like mine."
+
+[sub_resource type="Resource" id="Resource_ogryx"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Ha-ha-hah, that’s true."
+
+[sub_resource type="Resource" id="Resource_nq2iu"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_16fla"), SubResource("Resource_h8lxk"), SubResource("Resource_r0u5m"), SubResource("Resource_5dmt7"), SubResource("Resource_1u0tw"), SubResource("Resource_rrul8"), SubResource("Resource_6ls0d"), SubResource("Resource_h4iyd"), SubResource("Resource_kjfxx"), SubResource("Resource_ogryx")])
+
+[sub_resource type="Resource" id="Resource_tfpld"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "How do you like this one?"
+
+[sub_resource type="Resource" id="Resource_yxc32"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I am going to be honest, I am not a fan. But it’s not that bad. Perhaps this just isn’t quite right for me. Even Mel has trouble making my tea perfect. It’s okay."
+
+[sub_resource type="Resource" id="Resource_lr11b"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "You have very high standards that no one can explain, Viv."
+
+[sub_resource type="Resource" id="Resource_pgtq2"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "That I do, Om. I can’t help myself. I like what I like."
+
+[sub_resource type="Resource" id="Resource_t7fum"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_tfpld"), SubResource("Resource_yxc32"), SubResource("Resource_lr11b"), SubResource("Resource_pgtq2")])
+
+[sub_resource type="Resource" id="Resource_fadw8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "You know, Darlin’... This is a very good tea. I like the bitter flavor of it. "
+
+[sub_resource type="Resource" id="Resource_nhfuw"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Reminds me how me and my friend Anne were collecting sage by the cliffs here in Ish. "
+
+[sub_resource type="Resource" id="Resource_i2ij4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I think we tried to make some kind of tea out of it, but it hadn't really worked out. It didn’t have much taste. But I do like it!"
+
+[sub_resource type="Resource" id="Resource_32j13"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Oh, Viv, how is Anne by the way? "
+
+[sub_resource type="Resource" id="Resource_a64ka"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "She’s alright, she’s going to be back from Feltash soon. I am very excited for what she will bring from there this time."
+
+[sub_resource type="Resource" id="Resource_0ooog"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "Who is Anne?"
+
+[sub_resource type="Resource" id="Resource_pvwp8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "She is a good friend of mine. She visits Torgovenitsa from time to time since she's an inventor."
+
+[sub_resource type="Resource" id="Resource_arwlx"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "We’ve known each other for quite a long time. She always supported me through every obstacle. And always seen me for who I really am. "
+
+[sub_resource type="Resource" id="Resource_y5j1x"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "For that I am very grateful."
+
+[sub_resource type="Resource" id="Resource_r8bn3"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "She also goes to our ceremonies from time to time. She helped me decorate half of this place. I owe Anne a lot for that."
+
+[sub_resource type="Resource" id="Resource_gdf0m"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "She’s very kind, you’ll meet her someday."
+
+[sub_resource type="Resource" id="Resource_13nww"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_fadw8"), SubResource("Resource_nhfuw"), SubResource("Resource_i2ij4"), SubResource("Resource_32j13"), SubResource("Resource_a64ka"), SubResource("Resource_0ooog"), SubResource("Resource_pvwp8"), SubResource("Resource_arwlx"), SubResource("Resource_y5j1x"), SubResource("Resource_r8bn3"), SubResource("Resource_gdf0m")])
+
+[sub_resource type="Resource" id="Resource_v8qlr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "… God, that’s too much flavor I don't like."
+
+[sub_resource type="Resource" id="Resource_j3q0t"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_v8qlr")])
+
+[sub_resource type="Resource" id="Resource_hkpxo"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Sorry, I won’t drink it. I physically cannot."
+
+[sub_resource type="Resource" id="Resource_hcuwo"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_hkpxo")])
+
+[sub_resource type="Resource" id="Resource_vgipn"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Eh."
+
+[sub_resource type="Resource" id="Resource_gvdba"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_vgipn")])
+
+[sub_resource type="Resource" id="Resource_2us4f"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "..."
+
+[sub_resource type="Resource" id="Resource_vgbre"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_2us4f")])
+
+[sub_resource type="Resource" id="Resource_s7oyj"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "It’s manageable."
+
+[sub_resource type="Resource" id="Resource_e6uf8"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_s7oyj")])
+
+[sub_resource type="Resource" id="Resource_uqbit"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "This is very good."
+
+[sub_resource type="Resource" id="Resource_sbubx"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_uqbit")])
+
+[sub_resource type="Resource" id="Resource_jmbg5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Nice tea."
+
+[sub_resource type="Resource" id="Resource_y6hk0"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_jmbg5")])
+
+[sub_resource type="Resource" id="Resource_5dq4d"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I do love this tea."
+
+[sub_resource type="Resource" id="Resource_nkv2l"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_5dq4d")])
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -85,6 +295,9 @@ offset_right = 63.0
 offset_bottom = 191.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("4_4k6hw")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Brokk" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -95,6 +308,9 @@ offset_right = 317.0
 offset_bottom = 160.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("5_0ci1l")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Mel" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -105,6 +321,9 @@ offset_right = 604.0
 offset_bottom = 85.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("6_2dxjs")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Vivienne" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -115,6 +334,12 @@ offset_right = 861.0
 offset_bottom = 108.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("7_cmgwm")
+upset_dialog = SubResource("Resource_nq2iu")
+back_to_normal_dialog = SubResource("Resource_t7fum")
+happy_dialog = SubResource("Resource_13nww")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([SubResource("Resource_j3q0t"), SubResource("Resource_hcuwo")])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([SubResource("Resource_gvdba"), SubResource("Resource_vgbre"), SubResource("Resource_e6uf8")])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([SubResource("Resource_sbubx"), SubResource("Resource_y6hk0"), SubResource("Resource_nkv2l")])
 
 [node name="Liam" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -125,6 +350,9 @@ offset_right = 1162.0
 offset_bottom = 136.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_s2x27")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Om" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -135,6 +363,9 @@ offset_right = 1429.0
 offset_bottom = 153.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_eijjg")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Teapot" type="TextureRect" parent="."]
 unique_name_in_owner = true

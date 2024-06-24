@@ -50,7 +50,9 @@ func set_correct_sprites() -> void:
 @export var upset_dialog: DialogData
 @export var back_to_normal_dialog: DialogData
 @export var happy_dialog: DialogData
-@export var filler_phrases: Array[DialogData]
+@export var filler_phrases_bad: Array[DialogData]
+@export var filler_phrases_normal: Array[DialogData]
+@export var filler_phrases_good: Array[DialogData]
 
 
 func give_cup(cup: Cup) -> void:
@@ -58,14 +60,6 @@ func give_cup(cup: Cup) -> void:
 	cup.reparent(cup_spot, false)
 	cup.position = Vector2.ZERO
 	has_cup = true
-
-
-func try_get_filler_dialog() -> DialogData:
-	randomize()
-	if filler_phrases:
-		var index := randi_range(0, filler_phrases.size() - 1)
-		return filler_phrases.pop_at(index)
-	return null
 
 
 func spill_tea(tea: Tea) -> void:
@@ -87,6 +81,7 @@ func consume_and_evaluate_tea(tea: Tea) -> DialogData:
 			was_upset = true
 			state = CharacterState.UPSET
 			return upset_dialog
+		return filler_phrases_bad.pick_random() if filler_phrases_bad else null
 	elif score > 1:
 		if state == CharacterState.UPSET:
 			state = CharacterState.INITIAL
@@ -94,12 +89,12 @@ func consume_and_evaluate_tea(tea: Tea) -> DialogData:
 		elif state == CharacterState.INITIAL:
 			state = CharacterState.HAPPY
 			return happy_dialog
-		elif state == CharacterState.HAPPY:
-			return try_get_filler_dialog()
-	elif state == CharacterState.HAPPY:
-		return try_get_filler_dialog()
-	
-	return null
+		return filler_phrases_good.pick_random() if filler_phrases_good else null
+	else:
+		if state == CharacterState.UPSET:
+			state = CharacterState.INITIAL
+			return back_to_normal_dialog
+		return filler_phrases_normal.pick_random() if filler_phrases_normal else null
 
 
 

@@ -39,7 +39,7 @@ func _ready() -> void:
 func display_dialog(character: Character, dialog: DialogData, display_cup_dialog := false) -> void:
 	var tween := create_tween()
 	character.material = highlight_material
-	tween.tween_property(darkening_light, "energy", 0.5, 0.1)
+	tween.tween_property(darkening_light, "energy", 0.5, 1)
 	await tween.finished
 	if is_instance_valid(dialog):
 		var dialog_line := preload("res://src/scenes/ui/dialog_line.tscn").instantiate()
@@ -54,7 +54,7 @@ func display_dialog(character: Character, dialog: DialogData, display_cup_dialog
 		character.give_cup(cup)
 		cup_dialog.hide()
 	tween = create_tween()
-	tween.tween_property(darkening_light, "energy", 0, 0.1)
+	tween.tween_property(darkening_light, "energy", 0, 1)
 	await tween.finished
 	character.material = null
 
