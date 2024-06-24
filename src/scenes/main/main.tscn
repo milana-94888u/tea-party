@@ -184,7 +184,7 @@ text = "This is so romantic!"
 [sub_resource type="Resource" id="Resource_vw2hk"]
 script = ExtResource("7_v73w7")
 character = ExtResource("6_2dxjs")
-text = "This is so romantic!"
+text = "Yeah! Also it turns out Brokk made our rings. He kept it secret that Elena ordered the same thing as me."
 
 [sub_resource type="Resource" id="Resource_d6dlr"]
 script = ExtResource("7_v73w7")
