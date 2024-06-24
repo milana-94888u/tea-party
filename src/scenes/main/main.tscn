@@ -579,12 +579,12 @@ text = "Yeah, sure. Well, I’m a local smith. Trying to save some money on my d
 [sub_resource type="Resource" id="Resource_r2c6w"]
 script = ExtResource("7_v73w7")
 character = ExtResource("13_rff66")
-text = "Yeah, sure. Well, I’m a local smith. Trying to save some money on my dream. And I like drinking tea instead of beer."
+text = "Did you build your own armor?"
 
 [sub_resource type="Resource" id="Resource_ciq5m"]
 script = ExtResource("7_v73w7")
 character = ExtResource("5_0ci1l")
-text = "Yeah, sure. Well, I’m a local smith. Trying to save some money on my dream. And I like drinking tea instead of beer."
+text = "Yes. It took a while to make, but it lets me appear the way I want - cool. And I made it in a way that is easy to remove so I can wear it more frequently. I’m quite proud of it."
 
 [sub_resource type="Resource" id="Resource_lgcu2"]
 script = ExtResource("7_v73w7")
