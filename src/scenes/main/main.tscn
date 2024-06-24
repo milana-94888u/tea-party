@@ -1,4 +1,4 @@
-[gd_scene load_steps=325 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=337 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -49,6 +49,65 @@ text = "Now, the tea is hot, the cookies are on the table. So without further ad
 [sub_resource type="Resource" id="Resource_bot4m"]
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ppora"), SubResource("Resource_8agmq"), SubResource("Resource_1dwxd"), SubResource("Resource_mnsne"), SubResource("Resource_dxktt"), SubResource("Resource_wciit")])
+
+[sub_resource type="Resource" id="Resource_2o0y6"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "It’s getting quite late, everybody. So, we’ll have to wrap this up for now."
+
+[sub_resource type="Resource" id="Resource_wnci2"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I hope everyone will be here next week, too. It’s been very fun! A new perspective in tea making is exciting, right?"
+
+[sub_resource type="Resource" id="Resource_yvjs1"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "The people in the room nodded and shared their agreement. Your approach to tea making is something new to all of them. And they will be waiting for more."
+
+[sub_resource type="Resource" id="Resource_i0vjw"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Of course, the shop itself will be open most of the week. So, if you’d like to grab the tea that Me or *name* made, take a look tomorrow."
+
+[sub_resource type="Resource" id="Resource_qitsn"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Again, thank you all for coming here today. Good night and we’ll see you later!"
+
+[sub_resource type="Resource" id="Resource_1k0iq"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Everyone started to get up from their seats. Selene took her purse, checking if everything was in order. Om and Liam talked as they prepared to make their exit."
+
+[sub_resource type="Resource" id="Resource_gdxx0"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Brokk fixed the belts on his armor, dusted off the cape and went for the main door."
+
+[sub_resource type="Resource" id="Resource_j6gch"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Vivienne and Mel kept talking until they laughed about something and Viv followed everyone else."
+
+[sub_resource type="Resource" id="Resource_syf4b"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Now there was only you and Mel left."
+
+[sub_resource type="Resource" id="Resource_6atq1"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Not bad for the first ceremony! You did well. See you tomorrow, *name*?"
+
+[sub_resource type="Resource" id="Resource_u4cn2"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "See you tomorrow, Mel."
+
+[sub_resource type="Resource" id="Resource_pjues"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_2o0y6"), SubResource("Resource_wnci2"), SubResource("Resource_yvjs1"), SubResource("Resource_i0vjw"), SubResource("Resource_qitsn"), SubResource("Resource_1k0iq"), SubResource("Resource_gdxx0"), SubResource("Resource_j6gch"), SubResource("Resource_syf4b"), SubResource("Resource_6atq1"), SubResource("Resource_u4cn2")])
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b8ujo"]
 light_mode = 1
@@ -1504,6 +1563,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bmpws")
 introduction_dialog = SubResource("Resource_bot4m")
+outroduction_dialog = SubResource("Resource_pjues")
 highlight_material = SubResource("CanvasItemMaterial_b8ujo")
 
 [node name="Background" type="TextureRect" parent="."]

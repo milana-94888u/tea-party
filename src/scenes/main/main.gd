@@ -2,6 +2,7 @@ extends Control
 
 
 @export var introduction_dialog: DialogData
+@export var outroduction_dialog: DialogData
 
 
 func spill_tea(tea: Tea) -> void:
@@ -21,9 +22,13 @@ func _ready() -> void:
 	await display_dialog(%Mel, introduction_dialog)
 	for character in characters:
 		await display_dialog(character, character.cup_dialog, true)
-	for i in 3:
-		var tea := await choose_tea()
-		await spill_tea(tea)
+	if PlayerData.is_full:
+		while true:
+			await spill_tea(await choose_tea())
+	else:
+		for i in 3:
+			await spill_tea(await choose_tea())
+	display_dialog(%Mel, outroduction_dialog)
 	var finishing_screen := preload("res://src/scenes/ui/finishing_screen.tscn").instantiate()
 	canvas_for_ui.add_child.call_deferred(finishing_screen)
 
