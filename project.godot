@@ -29,6 +29,7 @@ window/stretch/mode="viewport"
 [gui]
 
 theme/custom="res://resources/main_theme.tres"
+theme/custom_font="res://assets/Dreamwood PERSONAL USE ONLY.ttf"
 
 [rendering]
 
