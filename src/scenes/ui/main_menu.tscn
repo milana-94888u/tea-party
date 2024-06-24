@@ -12,19 +12,36 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ygnp3")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_iuohf")
 metadata/_edit_lock_ = true
 
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.5
+offset_right = 128.5
+offset_bottom = 97.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 256
+text = "Tea work"
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 88.0
-offset_top = 235.0
-offset_right = 929.0
-offset_bottom = 697.0
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = -775.0
+offset_right = 1026.0
+grow_vertical = 0
+scale = Vector2(0.9, 0.9)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -94,9 +111,36 @@ tooltip_text = "the game won't stop until you get every main dialogue on each ch
 mouse_default_cursor_shape = 2
 text = "Full story"
 
+[node name="CreditsButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Credits"
+
+[node name="FullscreenHint" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -919.0
+offset_top = -163.0
+offset_right = -87.0
+offset_bottom = -66.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="FullscreenHint"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Try playing it fullscreen"
+metadata/_edit_lock_ = true
+
 [connection signal="text_changed" from="VBoxContainer/HBoxContainer/NameLine" to="." method="_on_name_line_text_changed"]
 [connection signal="item_selected" from="VBoxContainer/HBoxContainer2/VBoxContainer/PronounsOptions" to="." method="_on_pronouns_options_item_selected"]
 [connection signal="text_changed" from="VBoxContainer/HBoxContainer2/VBoxContainer/PronounsLine" to="." method="_on_pronouns_line_text_changed"]
 [connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_tutorial_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ShortGameButton" to="." method="_on_short_game_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/FullStoryButton" to="." method="_on_full_story_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]

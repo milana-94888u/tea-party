@@ -98,3 +98,7 @@ func _on_full_story_button_pressed() -> void:
 	var pronouns := pronouns_line.text.split("/", true, 2)
 	PlayerData.start_game(name_line.text, pronouns[0], pronouns[1], true)
 	get_tree().change_scene_to_file("res://src/scenes/main/main.tscn")
+
+
+func _on_credits_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://src/scenes/ui/credits.tscn")
