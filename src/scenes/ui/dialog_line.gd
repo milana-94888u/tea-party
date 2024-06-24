@@ -29,4 +29,5 @@ signal requested_next_line
 
 
 func _on_click_preventing_background_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
 	requested_next_line.emit()

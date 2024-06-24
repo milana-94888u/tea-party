@@ -1,10 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://flsv31pya5qd"]
 
 [ext_resource type="Script" path="res://src/autoload/sfx_player.gd" id="1_o74yy"]
-[ext_resource type="AudioStream" uid="uid://dg2ays5xekvsg" path="res://assets/audio/book_close.ogg" id="2_2r7u4"]
+[ext_resource type="AudioStream" uid="uid://6ebfsbyq15co" path="res://assets/audio/you-likey-yazz_.ogg" id="2_lvje7"]
 
 [node name="SfxPlayer" type="Node"]
 script = ExtResource("1_o74yy")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_2r7u4")
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_lvje7")
+volume_db = -20.0
+autoplay = true

@@ -36,6 +36,7 @@ text = "Enter your name:"
 [node name="NameLine" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
 text = "Player"
 placeholder_text = "name"
 
@@ -68,6 +69,7 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "they/them"
 placeholder_text = "pronouns"
+alignment = 1
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
@@ -75,5 +77,7 @@ layout_mode = 2
 mouse_default_cursor_shape = 2
 text = "Start"
 
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer/NameLine" to="." method="_on_name_line_text_changed"]
 [connection signal="item_selected" from="VBoxContainer/HBoxContainer2/VBoxContainer/PronounsOptions" to="." method="_on_pronouns_options_item_selected"]
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer2/VBoxContainer/PronounsLine" to="." method="_on_pronouns_line_text_changed"]
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

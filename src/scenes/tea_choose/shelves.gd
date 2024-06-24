@@ -93,6 +93,7 @@ func _on_closed_book_mouse_exited() -> void:
 
 
 func _on_finish_button_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
 	tea_completed.emit(Tea.make_tea(
 		base_spot.get_child(0).ingredient_data,
 		flower_spot.get_child(0).ingredient_data,

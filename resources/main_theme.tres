@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=10 format=3 uid="uid://b78sk1t2fxuvk"]
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://b78sk1t2fxuvk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0lxlm"]
 border_width_left = 16
@@ -106,8 +106,34 @@ expand_margin_top = 8.0
 expand_margin_right = 16.0
 expand_margin_bottom = 8.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wm2je"]
+border_width_left = 16
+border_width_top = 16
+border_width_right = 16
+border_width_bottom = 16
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 16.0
+expand_margin_top = 8.0
+expand_margin_right = 16.0
+expand_margin_bottom = 8.0
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q01gv"]
 bg_color = Color(0.483912, 0.660092, 0.384535, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_he3is"]
+bg_color = Color(0.6358, 0.621179, 0.163546, 1)
+border_color = Color(0.726664, 0.873201, 3.85046e-07, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 16.0
+expand_margin_top = 8.0
+expand_margin_right = 16.0
+expand_margin_bottom = 8.0
 
 [resource]
 default_font_size = 32
@@ -123,9 +149,11 @@ HeaderLarge/styles/normal = SubResource("StyleBoxEmpty_61s6n")
 Label/constants/line_spacing = 8
 Label/styles/normal = SubResource("StyleBoxEmpty_1sjkp")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_yfnw1")
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_wm2je")
 MarginContainer/constants/margin_bottom = 50
 MarginContainer/constants/margin_left = 50
 MarginContainer/constants/margin_right = 50
 MarginContainer/constants/margin_top = 50
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_q01gv")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_he3is")
 VBoxContainer/constants/separation = 32

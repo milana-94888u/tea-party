@@ -31,6 +31,7 @@ func choose_tea() -> Tea:
 
 
 func make_tea() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
 	invitation.hide()
 	var tea := await choose_tea()
 	teapot.texture = tea.base.teapot
@@ -40,6 +41,7 @@ func make_tea() -> void:
 
 
 func _on_next_button_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
 	current_info += 1
 	learning_label.text = info[current_info]
 	if current_info >= len(info) - 1:
@@ -49,4 +51,5 @@ func _on_next_button_pressed() -> void:
 
 
 func _on_finish_button_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
 	get_tree().change_scene_to_file("res://src/scenes/ui/main_menu.tscn")
