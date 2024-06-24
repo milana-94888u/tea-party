@@ -20,7 +20,7 @@ func spill_tea(tea: Tea) -> void:
 func _ready() -> void:
 	await display_dialog(%Mel, introduction_dialog)
 	for character in characters:
-		await display_dialog(character, null, true)
+		await display_dialog(character, character.cup_dialog, true)
 	for i in 3:
 		var tea := await choose_tea()
 		await spill_tea(tea)
@@ -29,8 +29,6 @@ func _ready() -> void:
 
 
 @export var highlight_material: Material
-
-@onready var cup_dialog := %CupDialog as CupDialog
 
 @onready var teapot := %Teapot as TextureRect
 
@@ -52,10 +50,11 @@ func display_dialog(character: Character, dialog: DialogData, display_cup_dialog
 			await dialog_line.requested_next_line
 		dialog_line.queue_free()
 	if display_cup_dialog:
-		cup_dialog.show()
+		var cup_dialog := preload("res://src/scenes/cup_choose/cup_dialog.tscn").instantiate() as CupDialog
+		canvas_for_ui.add_child(cup_dialog)
 		var cup: Cup = await cup_dialog.cup_chosen
 		character.give_cup(cup)
-		cup_dialog.hide()
+		cup_dialog.queue_free()
 	tween = create_tween()
 	tween.tween_property(darkening_light, "energy", 0, 1)
 	await tween.finished

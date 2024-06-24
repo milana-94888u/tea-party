@@ -53,7 +53,7 @@ layout_mode = 2
 [node name="PronounsOptions" type="OptionButton" parent="VBoxContainer/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-item_count = 4
+item_count = 5
 selected = 2
 popup/item_0/text = "she/her"
 popup/item_0/id = 0
@@ -61,8 +61,10 @@ popup/item_1/text = "he/him"
 popup/item_1/id = 1
 popup/item_2/text = "they/them"
 popup/item_2/id = 2
-popup/item_3/text = "custom"
-popup/item_3/id = 3
+popup/item_3/text = "it/its"
+popup/item_3/id = 4
+popup/item_4/text = "custom"
+popup/item_4/id = 3
 
 [node name="PronounsLine" type="LineEdit" parent="VBoxContainer/HBoxContainer2/VBoxContainer"]
 unique_name_in_owner = true

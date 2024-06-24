@@ -25,7 +25,13 @@ func replace_placeholders(text: String) -> String:
 	return text.replace(
 		"*name*", player_name
 	).replace(
-		"*pron_nom*", pronouns_nominative
+		"*pron_nom*", pronouns_nominative.capitalize()
 	).replace(
-		"*pron_accus*", pronouns_accusative
+		"*pron_accus*", pronouns_accusative.capitalize()
+	).replace(
+		"*pron_be*", (
+			pronouns_nominative + (
+				"'s" if pronouns_nominative != "they" else "'re"
+			)
+		).capitalize()
 	)

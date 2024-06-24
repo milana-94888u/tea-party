@@ -31,7 +31,7 @@ func _ready() -> void:
 
 
 func _on_pronouns_options_item_selected(index: int) -> void:
-	if index < 3:
+	if index < 4:
 		_on_pronouns_line_text_changed(pronouns_options.get_item_text(index))
 		pronouns_line.text = pronouns_options.get_item_text(index)
 		pronouns_line.editable = false

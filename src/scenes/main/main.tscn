@@ -1,4 +1,4 @@
-[gd_scene load_steps=311 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=325 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -15,7 +15,6 @@
 [ext_resource type="Script" path="res://src/resources/dialog_data.gd" id="9_tlpgv"]
 [ext_resource type="Resource" uid="uid://c0sypo4qwbfah" path="res://resources/characters/you.tres" id="13_rff66"]
 [ext_resource type="Resource" uid="uid://jjykjcaq22t8" path="res://resources/characters/narrator.tres" id="14_6cvn1"]
-[ext_resource type="PackedScene" uid="uid://dtpgi8ckq271b" path="res://src/scenes/cup_choose/cup_dialog.tscn" id="15_tn5o8"]
 
 [sub_resource type="Resource" id="Resource_ppora"]
 script = ExtResource("7_v73w7")
@@ -30,14 +29,38 @@ text = "Recently I had some troubles doing everything on my own. I needed to fin
 [sub_resource type="Resource" id="Resource_1dwxd"]
 script = ExtResource("7_v73w7")
 character = ExtResource("6_2dxjs")
-text = "They’re going to be making today’s tea, so you’re up to criticize them for it. They’ll need to know what everyone likes"
+text = "*pron_be* going to be making today’s tea, so you’re up to criticize the result. *pron_nom* will need to know what everyone likes."
+
+[sub_resource type="Resource" id="Resource_mnsne"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Also, today we have some recurring faces as well. Selene, Brokk, Vivienne, Liam, and Om."
+
+[sub_resource type="Resource" id="Resource_dxktt"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Of course, there’s also your host-witch, me - Mel. I’ve been here the whole time."
+
+[sub_resource type="Resource" id="Resource_wciit"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Now, the tea is hot, the cookies are on the table. So without further ado, let’s begin."
 
 [sub_resource type="Resource" id="Resource_bot4m"]
 script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ppora"), SubResource("Resource_8agmq"), SubResource("Resource_1dwxd")])
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ppora"), SubResource("Resource_8agmq"), SubResource("Resource_1dwxd"), SubResource("Resource_mnsne"), SubResource("Resource_dxktt"), SubResource("Resource_wciit")])
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b8ujo"]
 light_mode = 1
+
+[sub_resource type="Resource" id="Resource_k4ksq"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I don’t mind taking the cup that will be the last one left. The purple and blue one does look nice, though."
+
+[sub_resource type="Resource" id="Resource_pd834"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_k4ksq")])
 
 [sub_resource type="Resource" id="Resource_rqykd"]
 script = ExtResource("7_v73w7")
@@ -377,6 +400,15 @@ text = "I’m glad you’re helping Mel now."
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_bj4j4")])
 
+[sub_resource type="Resource" id="Resource_4sbph"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "I like the cup with pink and light blue. But the black cup with purple circles does remind me of things I work with."
+
+[sub_resource type="Resource" id="Resource_k1840"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_4sbph")])
+
 [sub_resource type="Resource" id="Resource_c00bk"]
 script = ExtResource("7_v73w7")
 character = ExtResource("5_0ci1l")
@@ -591,6 +623,24 @@ text = "I like the tea."
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_xko1i")])
 
+[sub_resource type="Resource" id="Resource_8pbg8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I like the orange cup. And the pink and light blue. And the black and purple! So many options…"
+
+[sub_resource type="Resource" id="Resource_mtxsr"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_8pbg8")])
+
+[sub_resource type="Resource" id="Resource_bctli"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "So many colorful cups. I’d love to have one with some warm colors."
+
+[sub_resource type="Resource" id="Resource_twlq5"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_bctli")])
+
 [sub_resource type="Resource" id="Resource_16fla"]
 script = ExtResource("7_v73w7")
 character = ExtResource("7_cmgwm")
@@ -800,6 +850,15 @@ text = "I do love this tea."
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_5dq4d")])
 
+[sub_resource type="Resource" id="Resource_no3sj"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I’m blue. That cup is blue. I think we’re the perfect match!"
+
+[sub_resource type="Resource" id="Resource_ak3co"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_no3sj")])
+
 [sub_resource type="Resource" id="Resource_hfs4y"]
 script = ExtResource("7_v73w7")
 character = ExtResource("8_s2x27")
@@ -927,7 +986,7 @@ text = "Don’t give him ideas…"
 [sub_resource type="Resource" id="Resource_i6jc4"]
 script = ExtResource("7_v73w7")
 character = ExtResource("6_2dxjs")
-text = "Guys, let’s just party some other time. It’s the first ceremony for my assistant! *pron_accus* doing so well! Let’s calm down."
+text = "Guys, let’s just party some other time. It’s the first ceremony for my assistant! *pron_be* doing so well! Let’s calm down."
 
 [sub_resource type="Resource" id="Resource_7p3wg"]
 script = ExtResource("7_v73w7")
@@ -1092,6 +1151,15 @@ text = "Mh-mhm!"
 [sub_resource type="Resource" id="Resource_gde5e"]
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_sqgoy")])
+
+[sub_resource type="Resource" id="Resource_m4oh4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "So many bright colors! I do love how yellow and purple flows together on one of those mugs."
+
+[sub_resource type="Resource" id="Resource_akg86"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_m4oh4")])
 
 [sub_resource type="Resource" id="Resource_4ktry"]
 script = ExtResource("7_v73w7")
@@ -1475,6 +1543,7 @@ offset_right = 63.0
 offset_bottom = 191.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("4_4k6hw")
+cup_dialog = SubResource("Resource_pd834")
 upset_dialog = SubResource("Resource_xrxy3")
 back_to_normal_dialog = SubResource("Resource_i5is7")
 happy_dialog = SubResource("Resource_u0btu")
@@ -1491,6 +1560,7 @@ offset_right = 317.0
 offset_bottom = 160.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("5_0ci1l")
+cup_dialog = SubResource("Resource_k1840")
 upset_dialog = SubResource("Resource_e0pym")
 back_to_normal_dialog = SubResource("Resource_tntuc")
 happy_dialog = SubResource("Resource_c1qbd")
@@ -1507,6 +1577,7 @@ offset_right = 604.0
 offset_bottom = 85.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("6_2dxjs")
+cup_dialog = SubResource("Resource_mtxsr")
 
 [node name="Vivienne" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -1517,6 +1588,7 @@ offset_right = 861.0
 offset_bottom = 108.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("7_cmgwm")
+cup_dialog = SubResource("Resource_twlq5")
 upset_dialog = SubResource("Resource_nq2iu")
 back_to_normal_dialog = SubResource("Resource_t7fum")
 happy_dialog = SubResource("Resource_13nww")
@@ -1533,6 +1605,7 @@ offset_right = 1162.0
 offset_bottom = 136.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_s2x27")
+cup_dialog = SubResource("Resource_ak3co")
 upset_dialog = SubResource("Resource_2ujoe")
 back_to_normal_dialog = SubResource("Resource_31iig")
 happy_dialog = SubResource("Resource_45bj6")
@@ -1549,6 +1622,7 @@ offset_right = 1429.0
 offset_bottom = 153.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_eijjg")
+cup_dialog = SubResource("Resource_akg86")
 upset_dialog = SubResource("Resource_mly83")
 back_to_normal_dialog = SubResource("Resource_grnv3")
 happy_dialog = SubResource("Resource_kn146")
@@ -1587,7 +1661,3 @@ energy = 0.0
 blend_mode = 1
 
 [node name="CanvasForUI" type="CanvasLayer" parent="."]
-
-[node name="CupDialog" parent="CanvasForUI" instance=ExtResource("15_tn5o8")]
-unique_name_in_owner = true
-visible = false

@@ -47,6 +47,7 @@ func set_correct_sprites() -> void:
 		set_correct_sprites()
 
 
+@export var cup_dialog: DialogData
 @export var upset_dialog: DialogData
 @export var back_to_normal_dialog: DialogData
 @export var happy_dialog: DialogData
