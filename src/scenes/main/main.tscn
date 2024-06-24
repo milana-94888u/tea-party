@@ -1,4 +1,4 @@
-[gd_scene load_steps=135 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=197 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -14,6 +14,7 @@
 [ext_resource type="Resource" uid="uid://ceeqxdqudfeq7" path="res://resources/characters/liam.tres" id="8_s2x27"]
 [ext_resource type="Script" path="res://src/resources/dialog_data.gd" id="9_tlpgv"]
 [ext_resource type="Resource" uid="uid://c0sypo4qwbfah" path="res://resources/characters/you.tres" id="13_rff66"]
+[ext_resource type="Resource" uid="uid://jjykjcaq22t8" path="res://resources/characters/narrator.tres" id="14_6cvn1"]
 [ext_resource type="PackedScene" uid="uid://dtpgi8ckq271b" path="res://src/scenes/cup_choose/cup_dialog.tscn" id="15_tn5o8"]
 
 [sub_resource type="Resource" id="Resource_ppora"]
@@ -585,6 +586,299 @@ text = "I do love this tea."
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_5dq4d")])
 
+[sub_resource type="Resource" id="Resource_hfs4y"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Now- Oh, this is tea is not for me, - Now, when everyone’s eyes were drawn away from us. We walked down the street with so much fish in the barrels."
+
+[sub_resource type="Resource" id="Resource_yw7en"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Some fish just jumped out of there on the rocks. It took us a while to get them to the river. But we managed to succeed in our little mission."
+
+[sub_resource type="Resource" id="Resource_86ifk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "I don’t understand why would you steal fish? That city is full of fishermen. You didn’t really save them. "
+
+[sub_resource type="Resource" id="Resource_hoo5t"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Well, the shopkeeper was an idiot. So, we stole his fish. It was a long time ago. There might be more reasons for it. But yeah. Fish."
+
+[sub_resource type="Resource" id="Resource_h5qkr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "Doesn’t make any sense…"
+
+[sub_resource type="Resource" id="Resource_a73yb"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "It does in my case. A little."
+
+[sub_resource type="Resource" id="Resource_oojem"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Your stories are just phenomenal, Liam."
+
+[sub_resource type="Resource" id="Resource_jie4o"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Thank you, Viv. And you have a good taste in tea."
+
+[sub_resource type="Resource" id="Resource_k0lh5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "You wanna go fishing sometime?"
+
+[sub_resource type="Resource" id="Resource_v63qt"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I wanna go steal some fish sometime if you’re gonna find another mean shopkeeper."
+
+[sub_resource type="Resource" id="Resource_sdqbk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "That might take a while."
+
+[sub_resource type="Resource" id="Resource_ey27q"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Well, in this case you know where to find me."
+
+[sub_resource type="Resource" id="Resource_2ujoe"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_hfs4y"), SubResource("Resource_yw7en"), SubResource("Resource_86ifk"), SubResource("Resource_hoo5t"), SubResource("Resource_h5qkr"), SubResource("Resource_a73yb"), SubResource("Resource_oojem"), SubResource("Resource_jie4o"), SubResource("Resource_k0lh5"), SubResource("Resource_v63qt"), SubResource("Resource_sdqbk"), SubResource("Resource_ey27q")])
+
+[sub_resource type="Resource" id="Resource_1f2id"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I am ready to party!"
+
+[sub_resource type="Resource" id="Resource_retth"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Liam gets up from his seat, looking around, trying to find something."
+
+[sub_resource type="Resource" id="Resource_4fk5d"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Liam, this is a tea ceremony."
+
+[sub_resource type="Resource" id="Resource_46pem"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I know, but! Mel, you had the thing… The- The player? The magic box!"
+
+[sub_resource type="Resource" id="Resource_18g1w"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "It’s a music box from Torgovenitsa. I’ll bring it next time, it’s too dusty. The thing was standing in a corner for a century or something."
+
+[sub_resource type="Resource" id="Resource_7behl"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Okay, okay. Does anyone have an instrument on them, perhaps?"
+
+[sub_resource type="Resource" id="Resource_j27x5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Anyone?"
+
+[sub_resource type="Resource" id="Resource_5lt3l"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "The best I can do is to use my armor like a drum."
+
+[sub_resource type="Resource" id="Resource_kvtb4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Dammit. Om? Maybe you will sing?"
+
+[sub_resource type="Resource" id="Resource_hwk6a"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Oh, I am not singing today, Liam. You want a song - sing it yourself."
+
+[sub_resource type="Resource" id="Resource_pcx2y"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Oh no."
+
+[sub_resource type="Resource" id="Resource_atktn"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Don’t give him ideas…"
+
+[sub_resource type="Resource" id="Resource_i6jc4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Guys, let’s just party some other time. It’s the first ceremony for my assistant! *pron_accus* doing so well! Let’s calm down."
+
+[sub_resource type="Resource" id="Resource_7p3wg"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Eh, alright. Next time perhaps."
+
+[sub_resource type="Resource" id="Resource_3ssar"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Liam sat down, his excitement - dead on the spot."
+
+[sub_resource type="Resource" id="Resource_52eey"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Thank you, Liam."
+
+[sub_resource type="Resource" id="Resource_31iig"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_1f2id"), SubResource("Resource_retth"), SubResource("Resource_4fk5d"), SubResource("Resource_46pem"), SubResource("Resource_18g1w"), SubResource("Resource_7behl"), SubResource("Resource_j27x5"), SubResource("Resource_5lt3l"), SubResource("Resource_kvtb4"), SubResource("Resource_hwk6a"), SubResource("Resource_pcx2y"), SubResource("Resource_atktn"), SubResource("Resource_i6jc4"), SubResource("Resource_7p3wg"), SubResource("Resource_3ssar"), SubResource("Resource_52eey")])
+
+[sub_resource type="Resource" id="Resource_qa2fe"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Mel, is it the same tea you usually make? I think your new assistant has a talent!"
+
+[sub_resource type="Resource" id="Resource_17wgq"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Indeed, *name* made a very good tea."
+
+[sub_resource type="Resource" id="Resource_bmmgy"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "I like it, too. I think I tried something like this before. What’s in that?"
+
+[sub_resource type="Resource" id="Resource_d0ns2"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "This is the company’s secret."
+
+[sub_resource type="Resource" id="Resource_6qa7x"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Alright, then."
+
+[sub_resource type="Resource" id="Resource_sk5dr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Looks like we will never know. But I’ll need you to make it again some other time! It’s so good."
+
+[sub_resource type="Resource" id="Resource_j3fuk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Reminds me… You haven’t been to our last ceremony. Where were you?"
+
+[sub_resource type="Resource" id="Resource_u4bb1"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Oh, you know, did some traveling, romanced some pretty pirates, the usual. I am very busy with my artistic mood swings that take me to new places every day."
+
+[sub_resource type="Resource" id="Resource_b2phj"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "You’re very adventurous for someone of your age."
+
+[sub_resource type="Resource" id="Resource_ehojr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Well, I am still alive. So I am going to be livin’. Nothing will change that but a sweet embrace of death."
+
+[sub_resource type="Resource" id="Resource_cyib5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "How poetic."
+
+[sub_resource type="Resource" id="Resource_iofga"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Of course, I am a poet, too, after all."
+
+[sub_resource type="Resource" id="Resource_45bj6"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_qa2fe"), SubResource("Resource_17wgq"), SubResource("Resource_bmmgy"), SubResource("Resource_d0ns2"), SubResource("Resource_6qa7x"), SubResource("Resource_sk5dr"), SubResource("Resource_j3fuk"), SubResource("Resource_u4bb1"), SubResource("Resource_b2phj"), SubResource("Resource_ehojr"), SubResource("Resource_cyib5"), SubResource("Resource_iofga")])
+
+[sub_resource type="Resource" id="Resource_kofge"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Not my type of tea, but someone else will totally like it. Viv, probably."
+
+[sub_resource type="Resource" id="Resource_kdlf2"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_kofge")])
+
+[sub_resource type="Resource" id="Resource_51oq8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Sorry, can’t finish it."
+
+[sub_resource type="Resource" id="Resource_63y2j"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_51oq8")])
+
+[sub_resource type="Resource" id="Resource_qer0m"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Oof, that’s not- That’s just not."
+
+[sub_resource type="Resource" id="Resource_m0qx1"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_qer0m")])
+
+[sub_resource type="Resource" id="Resource_vxirj"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I wish I could sing or dance. But I can only eat this cookie."
+
+[sub_resource type="Resource" id="Resource_ausco"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_vxirj")])
+
+[sub_resource type="Resource" id="Resource_6tgw5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "That’s a good tea."
+
+[sub_resource type="Resource" id="Resource_rehs6"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_6tgw5")])
+
+[sub_resource type="Resource" id="Resource_wdvn8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Good work, *name*."
+
+[sub_resource type="Resource" id="Resource_em2t2"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_wdvn8")])
+
+[sub_resource type="Resource" id="Resource_q8bt3"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Very go-o-o-od. Good job!"
+
+[sub_resource type="Resource" id="Resource_v5dva"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_q8bt3")])
+
+[sub_resource type="Resource" id="Resource_ocgh1"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Nice tea."
+
+[sub_resource type="Resource" id="Resource_38j5g"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ocgh1")])
+
+[sub_resource type="Resource" id="Resource_sqgoy"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Mh-mhm!"
+
+[sub_resource type="Resource" id="Resource_gde5e"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_sqgoy")])
+
 [node name="Main" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -685,6 +979,12 @@ offset_right = 1162.0
 offset_bottom = 136.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_s2x27")
+upset_dialog = SubResource("Resource_2ujoe")
+back_to_normal_dialog = SubResource("Resource_31iig")
+happy_dialog = SubResource("Resource_45bj6")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([SubResource("Resource_kdlf2"), SubResource("Resource_63y2j"), SubResource("Resource_m0qx1")])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([SubResource("Resource_ausco"), SubResource("Resource_rehs6"), SubResource("Resource_em2t2")])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([SubResource("Resource_v5dva"), SubResource("Resource_38j5g"), SubResource("Resource_gde5e")])
 
 [node name="Om" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
