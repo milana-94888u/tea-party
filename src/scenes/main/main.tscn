@@ -1,4 +1,4 @@
-[gd_scene load_steps=337 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=351 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -212,7 +212,7 @@ lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_rqykd"), SubResourc
 
 [sub_resource type="Resource" id="Resource_uwb0q"]
 script = ExtResource("7_v73w7")
-character = ExtResource("8_s2x27")
+character = ExtResource("4_4k6hw")
 text = "Liam, I remember you burrowing my tools. Where are they? You’ve been gone for a while."
 
 [sub_resource type="Resource" id="Resource_llqk4"]
@@ -767,16 +767,86 @@ text = "I am going to be honest, I am not a fan. But it’s not that bad. Perhap
 [sub_resource type="Resource" id="Resource_lr11b"]
 script = ExtResource("7_v73w7")
 character = ExtResource("8_eijjg")
-text = "You have very high standards that no one can explain, Viv."
+text = "You have very high standards that no one can explain, Viv. "
 
 [sub_resource type="Resource" id="Resource_pgtq2"]
 script = ExtResource("7_v73w7")
 character = ExtResource("7_cmgwm")
 text = "That I do, Om. I can’t help myself. I like what I like."
 
+[sub_resource type="Resource" id="Resource_2tw0c"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "About liking things… Viv, I remember you had something to share?"
+
+[sub_resource type="Resource" id="Resource_qs0mo"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Oh, well! Yes, I wanted to share something. "
+
+[sub_resource type="Resource" id="Resource_fppkk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("14_6cvn1")
+text = "Vivenne is hesitant in what she’s about to say, but only because she’s not used to sharing things so intimate to her. In fact she tried to prepare for this moment from the looks of it. "
+
+[sub_resource type="Resource" id="Resource_el8ky"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I never really had a partner before. I think I always wanted a partner, but I just didn’t know what kind of partner I needed. Recently I started meeting someone."
+
+[sub_resource type="Resource" id="Resource_sy38p"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "It’s fun, it turns out. I think I really like… Her. I never felt like this before."
+
+[sub_resource type="Resource" id="Resource_tvcy7"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I learnt a lot of things about myself sitting here behind this table. And I am very grateful to have someone with common experiences. "
+
+[sub_resource type="Resource" id="Resource_ou8k7"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "It really opened my eyes about how I really feel. How I dress, who I like… You understand what I mean, hopefully."
+
+[sub_resource type="Resource" id="Resource_b1que"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "So… Yes. I am very grateful. Especially, thank you, Mel. I think these tea ceremonies quite literally changed my life for the better."
+
+[sub_resource type="Resource" id="Resource_1o6h7"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "You’re very welcome, Viv. I’m glad that you feel welcomed here. And you are.  "
+
+[sub_resource type="Resource" id="Resource_cjp0d"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "I hope I can bring her here for some other ceremony. She is a very funny person."
+
+[sub_resource type="Resource" id="Resource_vvti0"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I’m excited to meet her!"
+
+[sub_resource type="Resource" id="Resource_xwb2l"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Me too! That’s so cool to hear, Viv."
+
+[sub_resource type="Resource" id="Resource_lw2ui"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I’m glad that you found someone like this. This is great."
+
+[sub_resource type="Resource" id="Resource_bf8st"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "*name* and Mel will make the perfect tea for that occasion, I’m sure.Additional phrases for normal tea."
+
 [sub_resource type="Resource" id="Resource_t7fum"]
 script = ExtResource("9_tlpgv")
-lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_tfpld"), SubResource("Resource_yxc32"), SubResource("Resource_lr11b"), SubResource("Resource_pgtq2")])
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_tfpld"), SubResource("Resource_yxc32"), SubResource("Resource_lr11b"), SubResource("Resource_pgtq2"), SubResource("Resource_2tw0c"), SubResource("Resource_qs0mo"), SubResource("Resource_fppkk"), SubResource("Resource_el8ky"), SubResource("Resource_sy38p"), SubResource("Resource_tvcy7"), SubResource("Resource_ou8k7"), SubResource("Resource_b1que"), SubResource("Resource_1o6h7"), SubResource("Resource_cjp0d"), SubResource("Resource_vvti0"), SubResource("Resource_xwb2l"), SubResource("Resource_lw2ui"), SubResource("Resource_bf8st")])
 
 [sub_resource type="Resource" id="Resource_fadw8"]
 script = ExtResource("7_v73w7")
