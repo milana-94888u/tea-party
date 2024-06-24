@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=135 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -37,6 +37,344 @@ lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ppora"), SubResourc
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b8ujo"]
 light_mode = 1
+
+[sub_resource type="Resource" id="Resource_rqykd"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I think this is too much for me. Oof."
+
+[sub_resource type="Resource" id="Resource_gw411"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Really? I quite like it."
+
+[sub_resource type="Resource" id="Resource_h7fky"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Honestly, I think that I like your mixtures more."
+
+[sub_resource type="Resource" id="Resource_lbwdn"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "That’s okay. Perhaps *name* will make another tea that you will love."
+
+[sub_resource type="Resource" id="Resource_8d8mp"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "That’s possible. But I don’t think anything can top your work. Also I wanted to ask. How is Elena?"
+
+[sub_resource type="Resource" id="Resource_1m4qt"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Oh, she’s doing great. I think we’re going to properly plan our wedding soon. It’s gonna be next June."
+
+[sub_resource type="Resource" id="Resource_v6d42"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Aw. This is nice to hear!"
+
+[sub_resource type="Resource" id="Resource_7x8i6"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "You girls got engaged? Wow! I didn’t know. When was that?"
+
+[sub_resource type="Resource" id="Resource_hio73"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Like a couple of weeks ago? We were going to Rar’ih to buy new supplies. We visited the park where we met back in our school days. And we proposed to each other at the same time."
+
+[sub_resource type="Resource" id="Resource_1gabd"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Oh, this is so sweet, I’m gonna cry."
+
+[sub_resource type="Resource" id="Resource_0skac"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Indeed."
+
+[sub_resource type="Resource" id="Resource_tkmxb"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "This is so romantic!"
+
+[sub_resource type="Resource" id="Resource_vw2hk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "This is so romantic!"
+
+[sub_resource type="Resource" id="Resource_d6dlr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "I never disappoint my customers. Also I barely talk, it was easy."
+
+[sub_resource type="Resource" id="Resource_vuk8c"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "It let us experience that beautiful moment. So I am very grateful."
+
+[sub_resource type="Resource" id="Resource_7ss7h"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "Just make sure I am on your guest list. This is enough for me."
+
+[sub_resource type="Resource" id="Resource_0vokx"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Of course, Brokk. Thank you."
+
+[sub_resource type="Resource" id="Resource_xrxy3"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_rqykd"), SubResource("Resource_gw411"), SubResource("Resource_h7fky"), SubResource("Resource_lbwdn"), SubResource("Resource_8d8mp"), SubResource("Resource_1m4qt"), SubResource("Resource_v6d42"), SubResource("Resource_7x8i6"), SubResource("Resource_hio73"), SubResource("Resource_1gabd"), SubResource("Resource_0skac"), SubResource("Resource_tkmxb"), SubResource("Resource_vw2hk"), SubResource("Resource_d6dlr"), SubResource("Resource_vuk8c"), SubResource("Resource_7ss7h"), SubResource("Resource_0vokx")])
+
+[sub_resource type="Resource" id="Resource_uwb0q"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Liam, I remember you burrowing my tools. Where are they? You’ve been gone for a while."
+
+[sub_resource type="Resource" id="Resource_llqk4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Uh-oh."
+
+[sub_resource type="Resource" id="Resource_vm11y"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Well, uh, Selene. I will be honest. I lost them."
+
+[sub_resource type="Resource" id="Resource_1aof5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "You’re kidding."
+
+[sub_resource type="Resource" id="Resource_2cp2d"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Unfortunately, I am not."
+
+[sub_resource type="Resource" id="Resource_43wh8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "They’re made by Arthur Oak himself!"
+
+[sub_resource type="Resource" id="Resource_jkdk8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I am sorry, I-"
+
+[sub_resource type="Resource" id="Resource_mu0sd"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "I think you just left them at my shop, Liam. I found some wooden box with tools after you left a couple days ago. I didn’t know it was, well, not yours."
+
+[sub_resource type="Resource" id="Resource_rsnwr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "It must be them! Can I get them back after the ceremony?"
+
+[sub_resource type="Resource" id="Resource_oyp4v"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "Yep."
+
+[sub_resource type="Resource" id="Resource_u37hr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Thank you, Brokk. And no thanks to you, Liam."
+
+[sub_resource type="Resource" id="Resource_k5ihu"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "My apologies."
+
+[sub_resource type="Resource" id="Resource_i5is7"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_uwb0q"), SubResource("Resource_llqk4"), SubResource("Resource_vm11y"), SubResource("Resource_1aof5"), SubResource("Resource_2cp2d"), SubResource("Resource_43wh8"), SubResource("Resource_jkdk8"), SubResource("Resource_mu0sd"), SubResource("Resource_rsnwr"), SubResource("Resource_oyp4v"), SubResource("Resource_u37hr"), SubResource("Resource_k5ihu")])
+
+[sub_resource type="Resource" id="Resource_n5vbe"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Hm…"
+
+[sub_resource type="Resource" id="Resource_qa26a"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "What is it?"
+
+[sub_resource type="Resource" id="Resource_xkj4b"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "It’s nothing."
+
+[sub_resource type="Resource" id="Resource_irl5j"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Selene, if something’s with the tea, just tell us."
+
+[sub_resource type="Resource" id="Resource_3h7jv"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "No-no, it’s not with the tea, the tea is great. It’s just. I feel off. In general."
+
+[sub_resource type="Resource" id="Resource_modkx"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "What happened?"
+
+[sub_resource type="Resource" id="Resource_3f3q0"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "You know, uh, well. People like us. I just have some friends that are, hm, into, you know, the same gender as them? Well, I just felt off because it’s like they don’t really see me as one of them, because I also like men, well. Like… my husband?"
+
+[sub_resource type="Resource" id="Resource_wl3ya"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I just feel they think I’m pretending, because they don’t take me seriously since I’m with Simon."
+
+[sub_resource type="Resource" id="Resource_h0kdr"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Oh…"
+
+[sub_resource type="Resource" id="Resource_tn24o"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Yeah. They’re good friends, but ever since I married Simon, they started to think like I changed. Switched some gears or something."
+
+[sub_resource type="Resource" id="Resource_eohkc"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "This is awful. Have you talked to them about it?"
+
+[sub_resource type="Resource" id="Resource_nwxcy"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "A couple of times, but they just would shake it off with a joke. I don’t know what to think in this scenario. We became distant in some way. No one shares their interests with me anymore."
+
+[sub_resource type="Resource" id="Resource_8frql"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I’m sorry, Selene. That sucks. Having a partner doesn’t change the way you feel about people around you, it doesn't change anything really. The only thing that changes you is living together and blah-blah blah."
+
+[sub_resource type="Resource" id="Resource_b7ay7"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "But after all, it doesn't change your personality. Unless Simon is an asshole. Which I know he’s not."
+
+[sub_resource type="Resource" id="Resource_6w2am"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "He said the same thing."
+
+[sub_resource type="Resource" id="Resource_owcbs"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "See, he’s a good pal. You and I are the best people to be sure of it."
+
+[sub_resource type="Resource" id="Resource_6q2yh"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I don’t know if your friends will see reason, but tell them what Simon said, maybe that will make them think. Or not."
+
+[sub_resource type="Resource" id="Resource_00frm"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "You still will have other people around you. These tea ceremonies, too."
+
+[sub_resource type="Resource" id="Resource_nasj8"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Thank you, Liam."
+
+[sub_resource type="Resource" id="Resource_cj5xn"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "You’re always welcome."
+
+[sub_resource type="Resource" id="Resource_u0btu"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_n5vbe"), SubResource("Resource_qa26a"), SubResource("Resource_xkj4b"), SubResource("Resource_irl5j"), SubResource("Resource_3h7jv"), SubResource("Resource_modkx"), SubResource("Resource_3f3q0"), SubResource("Resource_wl3ya"), SubResource("Resource_h0kdr"), SubResource("Resource_tn24o"), SubResource("Resource_eohkc"), SubResource("Resource_nwxcy"), SubResource("Resource_8frql"), SubResource("Resource_b7ay7"), SubResource("Resource_6w2am"), SubResource("Resource_owcbs"), SubResource("Resource_6q2yh"), SubResource("Resource_00frm"), SubResource("Resource_nasj8"), SubResource("Resource_cj5xn")])
+
+[sub_resource type="Resource" id="Resource_c2m3x"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Sorry, can’t drink that."
+
+[sub_resource type="Resource" id="Resource_0cajv"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_c2m3x")])
+
+[sub_resource type="Resource" id="Resource_ay4je"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "..."
+
+[sub_resource type="Resource" id="Resource_b7k4k"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ay4je")])
+
+[sub_resource type="Resource" id="Resource_n60xq"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Nope, still can’t drink that."
+
+[sub_resource type="Resource" id="Resource_8lwtj"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_n60xq")])
+
+[sub_resource type="Resource" id="Resource_gdd7i"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Could use something else, I think. But it might be just me-thing."
+
+[sub_resource type="Resource" id="Resource_57qnr"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_gdd7i")])
+
+[sub_resource type="Resource" id="Resource_p440v"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "It’s a fine tea."
+
+[sub_resource type="Resource" id="Resource_oq7hm"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_p440v")])
+
+[sub_resource type="Resource" id="Resource_6p4va"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Pretty okay."
+
+[sub_resource type="Resource" id="Resource_tdiis"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_6p4va")])
+
+[sub_resource type="Resource" id="Resource_5mnbi"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "This is a nice cup of tea. Thank you."
+
+[sub_resource type="Resource" id="Resource_7lnfb"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_5mnbi")])
+
+[sub_resource type="Resource" id="Resource_qplp3"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I don’t regret coming here for this tea."
+
+[sub_resource type="Resource" id="Resource_6mubi"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_qplp3")])
+
+[sub_resource type="Resource" id="Resource_bj4j4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I’m glad you’re helping Mel now."
+
+[sub_resource type="Resource" id="Resource_gn0vl"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_bj4j4")])
 
 [sub_resource type="Resource" id="Resource_16fla"]
 script = ExtResource("7_v73w7")
@@ -295,6 +633,12 @@ offset_right = 63.0
 offset_bottom = 191.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("4_4k6hw")
+upset_dialog = SubResource("Resource_xrxy3")
+back_to_normal_dialog = SubResource("Resource_i5is7")
+happy_dialog = SubResource("Resource_u0btu")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([SubResource("Resource_0cajv"), SubResource("Resource_b7k4k"), SubResource("Resource_8lwtj")])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([SubResource("Resource_57qnr"), SubResource("Resource_oq7hm"), SubResource("Resource_tdiis")])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([SubResource("Resource_7lnfb"), SubResource("Resource_6mubi"), SubResource("Resource_gn0vl")])
 
 [node name="Brokk" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
