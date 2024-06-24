@@ -100,14 +100,18 @@ text = "Tutorial"
 [node name="ShortGameButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-tooltip_text = "three round story, you won't be able to see every possibility in the dialogues"
+tooltip_text = "three round story,
+you won't be able to see
+every possibility in the dialogues"
 mouse_default_cursor_shape = 2
 text = "Short game"
 
 [node name="FullStoryButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-tooltip_text = "the game won't stop until you get every main dialogue on each character"
+tooltip_text = "the game won't stop
+until you get every main dialogue
+on each character"
 mouse_default_cursor_shape = 2
 text = "Full story"
 
