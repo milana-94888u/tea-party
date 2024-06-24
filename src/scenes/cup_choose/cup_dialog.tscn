@@ -1,7 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://dtpgi8ckq271b"]
+[gd_scene load_steps=20 format=3 uid="uid://dtpgi8ckq271b"]
 
 [ext_resource type="Script" path="res://src/scenes/cup_choose/cup_dialog.gd" id="1_1vpqn"]
 [ext_resource type="PackedScene" uid="uid://brxqggtuenwss" path="res://src/scenes/cup_choose/cup.tscn" id="1_2lt5y"]
+[ext_resource type="Texture2D" uid="uid://dfrbpxsxg1lay" path="res://assets/single_shelf.png" id="2_42j50"]
 [ext_resource type="Texture2D" uid="uid://jmlq1mq2ymlg" path="res://assets/cup_ace.png" id="2_bd5yb"]
 [ext_resource type="BitMap" uid="uid://cc0ij5wq87g70" path="res://assets/as_bitmask/cup_ace.png" id="3_evq6s"]
 [ext_resource type="Resource" uid="uid://ekhdmmilprno" path="res://resources/cups/ace_cup.tres" id="4_ua6gv"]
@@ -36,6 +37,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+texture = ExtResource("2_42j50")
 metadata/_edit_lock_ = true
 
 [node name="Cups" type="HBoxContainer" parent="."]
@@ -46,8 +48,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -910.0
-offset_top = -300.0
+offset_top = -330.0
 offset_right = 910.0
+offset_bottom = -30.0
 grow_horizontal = 2
 grow_vertical = 0
 alignment = 1
