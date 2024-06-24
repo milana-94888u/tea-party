@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Tea Party"
-run/main_scene="res://src/scenes/main/main.tscn"
+run/main_scene="res://src/scenes/ui/main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 SfxPlayer="*res://src/autoload/sfx_player.tscn"
+PlayerData="*res://src/autoload/player_data.gd"
 
 [display]
 
