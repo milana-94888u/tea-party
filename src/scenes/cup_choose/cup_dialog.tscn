@@ -42,55 +42,60 @@ metadata/_edit_lock_ = true
 
 [node name="Cups" type="HBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
+anchors_preset = 12
 anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -910.0
-offset_top = -330.0
-offset_right = 910.0
-offset_bottom = -30.0
+offset_left = 100.0
+offset_top = -300.0
+offset_right = 100.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.9, 0.9)
 alignment = 1
 
 [node name="AceCup" parent="Cups" instance=ExtResource("1_2lt5y")]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 texture_normal = ExtResource("2_bd5yb")
 texture_click_mask = ExtResource("3_evq6s")
 cup_data = ExtResource("4_ua6gv")
+metadata/_edit_lock_ = true
 
 [node name="BiCup" parent="Cups" instance=ExtResource("1_2lt5y")]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 texture_normal = ExtResource("5_nbc0h")
 texture_click_mask = ExtResource("6_6qgqo")
 cup_data = ExtResource("7_83wuc")
+metadata/_edit_lock_ = true
 
 [node name="LesbianCup" parent="Cups" instance=ExtResource("1_2lt5y")]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 texture_normal = ExtResource("8_4vmov")
 texture_click_mask = ExtResource("9_dci0f")
 cup_data = ExtResource("10_lyuta")
+metadata/_edit_lock_ = true
 
 [node name="MlmCup" parent="Cups" instance=ExtResource("1_2lt5y")]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 cup_data = ExtResource("11_phhdr")
+metadata/_edit_lock_ = true
 
 [node name="NbCup" parent="Cups" instance=ExtResource("1_2lt5y")]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 texture_normal = ExtResource("12_f1lq7")
 texture_click_mask = ExtResource("13_el0v6")
 cup_data = ExtResource("14_8wspv")
+metadata/_edit_lock_ = true
 
 [node name="TransCup" parent="Cups" instance=ExtResource("1_2lt5y")]
 layout_mode = 2
-size_flags_horizontal = 6
+size_flags_horizontal = 3
 texture_normal = ExtResource("15_uqoxu")
 texture_click_mask = ExtResource("16_osll0")
 cup_data = ExtResource("17_3hm85")
+metadata/_edit_lock_ = true
