@@ -1,4 +1,4 @@
-[gd_scene load_steps=242 format=3 uid="uid://dyvattgxpc0el"]
+[gd_scene load_steps=311 format=3 uid="uid://dyvattgxpc0el"]
 
 [ext_resource type="Script" path="res://src/scenes/main/main.gd" id="1_bmpws"]
 [ext_resource type="Texture2D" uid="uid://dmdbr7nav2qbj" path="res://assets/background.png" id="1_p3who"]
@@ -1093,6 +1093,340 @@ text = "Mh-mhm!"
 script = ExtResource("9_tlpgv")
 lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_sqgoy")])
 
+[sub_resource type="Resource" id="Resource_4ktry"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "I think it's okay if you feel that way. I mean, you can be whoever you feel you are. Look how you want to look. You shape your reality."
+
+[sub_resource type="Resource" id="Resource_rnj6g"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "I just can’t help but feel like I am pretending or something. Ever since I moved here, it felt like my dad could be right. Maybe I am abnormal or something."
+
+[sub_resource type="Resource" id="Resource_0imm5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Of course you are not. He’s simply small minded. There is nothing wrong with you. "
+
+[sub_resource type="Resource" id="Resource_ieaqc"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "Maybe I just want to make people think I am special. Or make myself think that way…"
+
+[sub_resource type="Resource" id="Resource_5qlue"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "It doesn’t work like that. You are not this kind of person."
+
+[sub_resource type="Resource" id="Resource_k5016"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "If you feel more welcomed when people call you Brokk, if you feel respected when people do it. Then this is just how it's supposed to be."
+
+[sub_resource type="Resource" id="Resource_af1oy"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "When you put on this armor and looked in a mirror, how did you feel?"
+
+[sub_resource type="Resource" id="Resource_y31g0"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "Well… I felt right. How it’s meant to be."
+
+[sub_resource type="Resource" id="Resource_h2mc1"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Then if it makes you feel good, you chose the right path for yourself."
+
+[sub_resource type="Resource" id="Resource_yahh5"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "There is nothing greater in this world than feeling welcomed not just by the people around you but also by yourself. "
+
+[sub_resource type="Resource" id="Resource_yv8md"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Some people can still disagree with you, but they aren’t worth your attention. You make your own life, your own circle of people. Your own comfort."
+
+[sub_resource type="Resource" id="Resource_veatu"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "It does take a while for many people to build it, but eventually they get there when they know what they really need."
+
+[sub_resource type="Resource" id="Resource_jwwt1"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "This is… Thank you. I think this is exactly what I needed to hear. Thank you for reassuring me."
+
+[sub_resource type="Resource" id="Resource_50y56"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Of course. If you have any doubts later on, we can meet them together. I will help you with what I can."
+
+[sub_resource type="Resource" id="Resource_fdpll"]
+script = ExtResource("7_v73w7")
+character = ExtResource("5_0ci1l")
+text = "Okay."
+
+[sub_resource type="Resource" id="Resource_mly83"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_4ktry"), SubResource("Resource_rnj6g"), SubResource("Resource_0imm5"), SubResource("Resource_ieaqc"), SubResource("Resource_5qlue"), SubResource("Resource_k5016"), SubResource("Resource_af1oy"), SubResource("Resource_y31g0"), SubResource("Resource_h2mc1"), SubResource("Resource_yahh5"), SubResource("Resource_yv8md"), SubResource("Resource_veatu"), SubResource("Resource_jwwt1"), SubResource("Resource_50y56"), SubResource("Resource_fdpll")])
+
+[sub_resource type="Resource" id="Resource_5vi5l"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "This flavor is less fun to me, but it’s still good. You’re doing well."
+
+[sub_resource type="Resource" id="Resource_xw51u"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "Thank you. I am still confused about what can work with what. And I don’t know what taste the other people have."
+
+[sub_resource type="Resource" id="Resource_j6q3a"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Well, I can say for sure that Liam doesn’t like bitter teas. And I think Selene likes sweet flavors. Don’t know much about everyone else."
+
+[sub_resource type="Resource" id="Resource_aem3u"]
+script = ExtResource("7_v73w7")
+character = ExtResource("13_rff66")
+text = "Are you friends with Selene?"
+
+[sub_resource type="Resource" id="Resource_rfseh"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "We were good friends. Still are. We’re just busy lately all the time. But at least we see each other here."
+
+[sub_resource type="Resource" id="Resource_k7aw2"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Hey, Selene!"
+
+[sub_resource type="Resource" id="Resource_rrl3e"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "What?"
+
+[sub_resource type="Resource" id="Resource_vkakb"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "You like sweet flavors, right?"
+
+[sub_resource type="Resource" id="Resource_6ireg"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Well, if we’re talking about tea. Yes, I like sweet."
+
+[sub_resource type="Resource" id="Resource_d1cpk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Okay, good. Means that I still remember some stuff about you."
+
+[sub_resource type="Resource" id="Resource_i7fuy"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "I know that you like Camomile!"
+
+[sub_resource type="Resource" id="Resource_ji6lj"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "I do!"
+
+[sub_resource type="Resource" id="Resource_cvpos"]
+script = ExtResource("7_v73w7")
+character = ExtResource("4_4k6hw")
+text = "Then I also remember some stuff. That’s good to know."
+
+[sub_resource type="Resource" id="Resource_nqqop"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Yeah!"
+
+[sub_resource type="Resource" id="Resource_grnv3"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_5vi5l"), SubResource("Resource_xw51u"), SubResource("Resource_j6q3a"), SubResource("Resource_aem3u"), SubResource("Resource_rfseh"), SubResource("Resource_k7aw2"), SubResource("Resource_rrl3e"), SubResource("Resource_vkakb"), SubResource("Resource_6ireg"), SubResource("Resource_d1cpk"), SubResource("Resource_i7fuy"), SubResource("Resource_ji6lj"), SubResource("Resource_cvpos"), SubResource("Resource_nqqop")])
+
+[sub_resource type="Resource" id="Resource_7qq6w"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Now I will be going to these ceremonies even more than before. No offense, Mel."
+
+[sub_resource type="Resource" id="Resource_ckk07"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Non taken, but…"
+
+[sub_resource type="Resource" id="Resource_k3rys"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Be careful."
+
+[sub_resource type="Resource" id="Resource_o8lvg"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Okay."
+
+[sub_resource type="Resource" id="Resource_ml0lk"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I’m joking. You’re alright."
+
+[sub_resource type="Resource" id="Resource_u8hso"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "I do like your chocolate tea."
+
+[sub_resource type="Resource" id="Resource_xxyjf"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I can give you some later when we’re done."
+
+[sub_resource type="Resource" id="Resource_wgi5m"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Really? That’s nice! How much-"
+
+[sub_resource type="Resource" id="Resource_5dqvw"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Come on, Om. We’re friends, it’s on the house."
+
+[sub_resource type="Resource" id="Resource_eksmm"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "This is very nice, thank you, Mel. "
+
+[sub_resource type="Resource" id="Resource_orovy"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Hey, what about me?"
+
+[sub_resource type="Resource" id="Resource_7pwkt"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I can give you a leaf I picked up on the road."
+
+[sub_resource type="Resource" id="Resource_6bbmh"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "Oh, how generous, your majesty."
+
+[sub_resource type="Resource" id="Resource_jdxll"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "I will share some chocolate tea, don’t worry."
+
+[sub_resource type="Resource" id="Resource_tbm6j"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Why is there no tea chocolate, by the way?"
+
+[sub_resource type="Resource" id="Resource_q2fty"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I was asking myself the same thing recently. But then I realized that I just don’t know how to make it. "
+
+[sub_resource type="Resource" id="Resource_m2qcl"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "I should find some beans and prepare it, actually. A try is a try."
+
+[sub_resource type="Resource" id="Resource_uw8nm"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_s2x27")
+text = "I’d like a taste whenever it is ready."
+
+[sub_resource type="Resource" id="Resource_0cktp"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Me too."
+
+[sub_resource type="Resource" id="Resource_ecakg"]
+script = ExtResource("7_v73w7")
+character = ExtResource("7_cmgwm")
+text = "Don’t forget about me, too."
+
+[sub_resource type="Resource" id="Resource_5vv7x"]
+script = ExtResource("7_v73w7")
+character = ExtResource("6_2dxjs")
+text = "Patience my friends. Patience."
+
+[sub_resource type="Resource" id="Resource_kn146"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_7qq6w"), SubResource("Resource_ckk07"), SubResource("Resource_k3rys"), SubResource("Resource_o8lvg"), SubResource("Resource_ml0lk"), SubResource("Resource_u8hso"), SubResource("Resource_xxyjf"), SubResource("Resource_wgi5m"), SubResource("Resource_5dqvw"), SubResource("Resource_eksmm"), SubResource("Resource_orovy"), SubResource("Resource_7pwkt"), SubResource("Resource_6bbmh"), SubResource("Resource_jdxll"), SubResource("Resource_tbm6j"), SubResource("Resource_q2fty"), SubResource("Resource_m2qcl"), SubResource("Resource_uw8nm"), SubResource("Resource_0cktp"), SubResource("Resource_ecakg"), SubResource("Resource_5vv7x")])
+
+[sub_resource type="Resource" id="Resource_g5lqb"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "..."
+
+[sub_resource type="Resource" id="Resource_0jwc5"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_g5lqb")])
+
+[sub_resource type="Resource" id="Resource_n4gh4"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Perhaps I will like other teas more than this one."
+
+[sub_resource type="Resource" id="Resource_rrjak"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_n4gh4")])
+
+[sub_resource type="Resource" id="Resource_8y5k3"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Yeah, Selene might like that more than me. Also I’d like more camomile."
+
+[sub_resource type="Resource" id="Resource_28erl"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_8y5k3")])
+
+[sub_resource type="Resource" id="Resource_xh1ne"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Decent job, mate."
+
+[sub_resource type="Resource" id="Resource_y81vs"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_xh1ne")])
+
+[sub_resource type="Resource" id="Resource_pjsp7"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "You’re doing good."
+
+[sub_resource type="Resource" id="Resource_7wsmq"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_pjsp7")])
+
+[sub_resource type="Resource" id="Resource_8p5qh"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "That’s a very nice tea. Makes me want to sit down on a chair outside, take a book and just take a sip before reading a chapter or… seven. You did well!"
+
+[sub_resource type="Resource" id="Resource_w0tyh"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_8p5qh")])
+
+[sub_resource type="Resource" id="Resource_ufp0r"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "*Sluuurp*"
+
+[sub_resource type="Resource" id="Resource_xyiye"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_ufp0r")])
+
+[sub_resource type="Resource" id="Resource_a3k4j"]
+script = ExtResource("7_v73w7")
+character = ExtResource("8_eijjg")
+text = "Liam also likes it."
+
+[sub_resource type="Resource" id="Resource_tkv4e"]
+script = ExtResource("9_tlpgv")
+lines = Array[ExtResource("7_v73w7")]([SubResource("Resource_a3k4j")])
+
 [node name="Main" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -1215,6 +1549,12 @@ offset_right = 1429.0
 offset_bottom = 153.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_eijjg")
+upset_dialog = SubResource("Resource_mly83")
+back_to_normal_dialog = SubResource("Resource_grnv3")
+happy_dialog = SubResource("Resource_kn146")
+filler_phrases_bad = Array[ExtResource("9_tlpgv")]([SubResource("Resource_0jwc5"), SubResource("Resource_rrjak")])
+filler_phrases_normal = Array[ExtResource("9_tlpgv")]([SubResource("Resource_28erl"), SubResource("Resource_y81vs"), SubResource("Resource_7wsmq")])
+filler_phrases_good = Array[ExtResource("9_tlpgv")]([SubResource("Resource_w0tyh"), SubResource("Resource_xyiye"), SubResource("Resource_tkv4e")])
 
 [node name="Teapot" type="TextureRect" parent="."]
 unique_name_in_owner = true
