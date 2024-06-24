@@ -6,8 +6,8 @@
 [resource]
 script = ExtResource("2_h8k6c")
 name = "Om"
-desired_effects = Array[int]([0, 0])
-undesired_effects = Array[int]([0, 0])
+desired_effects = Array[int]([3, 0])
+undesired_effects = Array[int]([1, 2])
 front_sprite_base = ExtResource("1_gks72")
 front_sprite_tea = ExtResource("1_gks72")
 cup_spot = Vector2(0, 820)

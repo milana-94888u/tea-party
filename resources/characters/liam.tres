@@ -7,8 +7,8 @@
 [resource]
 script = ExtResource("3_pcmh5")
 name = "Liam"
-desired_effects = Array[int]([0, 0])
-undesired_effects = Array[int]([0, 0])
+desired_effects = Array[int]([3, 0])
+undesired_effects = Array[int]([4, 2])
 back_sprite_base = ExtResource("1_hxlbm")
 front_sprite_base = ExtResource("2_v2rgd")
 back_sprite_tea = ExtResource("1_hxlbm")

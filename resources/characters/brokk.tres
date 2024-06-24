@@ -6,8 +6,8 @@
 [resource]
 script = ExtResource("3_bgv6o")
 name = "Brokk"
-desired_effects = Array[int]([0, 0])
-undesired_effects = Array[int]([0, 0])
+desired_effects = Array[int]([0, 1])
+undesired_effects = Array[int]([4, 2])
 back_sprite_base = ExtResource("1_vvyns")
 back_sprite_tea = ExtResource("1_vvyns")
 cup_spot = Vector2(400, 500)
