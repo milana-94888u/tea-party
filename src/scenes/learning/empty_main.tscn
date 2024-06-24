@@ -77,6 +77,7 @@ custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 theme_type_variation = &"HeaderLarge"
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4rbfq")
+horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="NextButton" type="Button" parent="Invitation"]
@@ -106,7 +107,8 @@ custom_minimum_size = Vector2(800, 0)
 layout_mode = 2
 theme_type_variation = &"HeaderLarge"
 theme_override_styles/normal = SubResource("StyleBoxEmpty_4rbfq")
-text = "Congratulations! You've made a tea"
+text = "Congratulations, you have made your first tea!"
+horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="FinishButton" type="Button" parent="Finishing"]

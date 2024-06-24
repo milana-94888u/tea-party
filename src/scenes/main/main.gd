@@ -8,6 +8,7 @@ func spill_tea(tea: Tea) -> void:
 	teapot.texture = tea.base.teapot
 	for character in characters:
 		character.spill_tea(tea)
+		await SfxPlayer.play_sound_effect(Sounds.tea_pour)
 	await get_tree().create_timer(1.0).timeout
 	for character in characters:
 		var dialog := character.consume_and_evaluate_tea(tea)
