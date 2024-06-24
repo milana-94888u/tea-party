@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="TeaIngredient" load_steps=4 format=3 uid="uid://dbfqhpnqrw11q"]
+[gd_resource type="Resource" script_class="TeaIngredient" load_steps=6 format=3 uid="uid://dbfqhpnqrw11q"]
 
 [ext_resource type="BitMap" uid="uid://c05wvqrwn4mdg" path="res://assets/ingredients/as_bitmask/pink_tea.png" id="1_e7wnx"]
 [ext_resource type="Texture2D" uid="uid://bm18diyk23gft" path="res://assets/ingredients/pink_tea.png" id="1_itvs8"]
 [ext_resource type="Script" path="res://src/resources/tea_variety.gd" id="1_ja5od"]
+[ext_resource type="Texture2D" uid="uid://cfmj31k1gekdb" path="res://assets/tea_pink.png" id="4_vihcm"]
+[ext_resource type="Texture2D" uid="uid://dmemsx8go7t0f" path="res://assets/pink tea.png" id="4_wy183"]
 
 [resource]
 script = ExtResource("1_ja5od")
@@ -10,3 +12,5 @@ effect = 5
 ingredient_type = 0
 ingredient_sprite = ExtResource("1_itvs8")
 click_mask = ExtResource("1_e7wnx")
+teapot = ExtResource("4_wy183")
+tea_in_cup = ExtResource("4_vihcm")

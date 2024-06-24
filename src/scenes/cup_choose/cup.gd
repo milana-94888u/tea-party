@@ -19,8 +19,8 @@ extends TextureButton
 		texture_click_mask = cup_data.click_mask
 
 
-func spill_tea(tea_base: TeaIngredient) -> void:
-	spilled_sprite.texture = tea_base.tea_in_cup
+func spill_tea(tea: Tea) -> void:
+	spilled_sprite.texture = tea.base.tea_in_cup
 
 
 func empty_cup() -> void:

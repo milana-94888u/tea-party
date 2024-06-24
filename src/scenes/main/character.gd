@@ -22,6 +22,7 @@ enum CharacterState {
 
 
 @export var state := CharacterState.INITIAL
+var was_upset := false
 
 
 func set_correct_sprites() -> void:
@@ -58,5 +59,64 @@ func give_cup(cup: Cup) -> void:
 	has_cup = true
 
 
-func evaluate_tea(tea: Tea) -> void:
-	pass
+func try_get_filler_dialog() -> DialogData:
+	randomize()
+	if filler_phrases:
+		var index := randi_range(0, filler_phrases.size() - 1)
+		return filler_phrases.pop_at(index)
+	return null
+
+
+func spill_tea(tea: Tea) -> void:
+	(cup_spot.get_child(0) as Cup).spill_tea(tea)
+
+
+func consume_and_evaluate_tea(tea: Tea) -> DialogData:
+	(cup_spot.get_child(0) as Cup).empty_cup()
+	var score := 0
+	for effect in [tea.base.effect, tea.flowers.effect, tea.fruit_bits.effect]:
+		if effect in character_data.desired_effects:
+			score += 1
+		elif effect in character_data.undesired_effects:
+			score -= 1
+	
+	if score < - 1:
+		if state == CharacterState.INITIAL and not was_upset:
+			was_upset = true
+			state = CharacterState.UPSET
+			return upset_dialog
+	elif score > 1:
+		if state == CharacterState.UPSET:
+			state = CharacterState.INITIAL
+			return back_to_normal_dialog
+		elif state == CharacterState.INITIAL:
+			state = CharacterState.HAPPY
+			return happy_dialog
+		elif state == CharacterState.HAPPY:
+			return try_get_filler_dialog()
+	elif state == CharacterState.HAPPY:
+		return try_get_filler_dialog()
+	
+	return null
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
