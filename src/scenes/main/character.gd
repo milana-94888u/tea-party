@@ -23,6 +23,7 @@ enum CharacterState {
 
 @export var state := CharacterState.INITIAL
 var was_upset := false
+var returned_back := false
 
 
 func set_correct_sprites() -> void:
@@ -82,10 +83,14 @@ func consume_and_evaluate_tea(tea: Tea) -> DialogData:
 			was_upset = true
 			state = CharacterState.UPSET
 			return upset_dialog
+		elif state == CharacterState.HAPPY and not was_upset:
+			was_upset = true
+			return upset_dialog
 		return filler_phrases_bad.pick_random() if filler_phrases_bad else null
 	elif score > 1:
 		if state == CharacterState.UPSET:
 			state = CharacterState.INITIAL
+			returned_back = true
 			return back_to_normal_dialog
 		elif state == CharacterState.INITIAL:
 			state = CharacterState.HAPPY
@@ -94,6 +99,10 @@ func consume_and_evaluate_tea(tea: Tea) -> DialogData:
 	else:
 		if state == CharacterState.UPSET:
 			state = CharacterState.INITIAL
+			returned_back = true
+			return back_to_normal_dialog
+		elif state == CharacterState.HAPPY and not returned_back:
+			returned_back = true
 			return back_to_normal_dialog
 		return filler_phrases_normal.pick_random() if filler_phrases_normal else null
 

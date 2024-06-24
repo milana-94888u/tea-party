@@ -18,10 +18,13 @@ func spill_tea(tea: Tea) -> void:
 		await get_tree().create_timer(0.2).timeout
 
 
-func check_all_happy() -> bool:
+func check_all_seen() -> bool:
 	return characters.all(
 		func(character: Character) -> bool:
-			return character.state == Character.CharacterState.HAPPY
+			return (
+				character.state == Character.CharacterState.HAPPY
+				and character.was_upset and character.returned_back
+			)
 	)
 
 
@@ -30,7 +33,7 @@ func _ready() -> void:
 	for character in characters:
 		await display_dialog(character, character.cup_dialog, true)
 	if PlayerData.is_full:
-		while not check_all_happy():
+		while not check_all_seen():
 			await spill_tea(await choose_tea())
 	else:
 		for i in 3:
