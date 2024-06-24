@@ -4,6 +4,7 @@ extends Node
 @export var player_name: String
 @export var pronouns_nominative: String
 @export var pronouns_accusative: String
+@export var was_started := false
 
 
 func start_game(
@@ -11,6 +12,7 @@ func start_game(
 	pronouns_nominative_: String,
 	pronouns_accusative_: String
 ) -> void:
+	was_started = true
 	player_name = player_name_
 	pronouns_nominative = pronouns_nominative_
 	pronouns_accusative = pronouns_accusative_

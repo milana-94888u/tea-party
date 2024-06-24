@@ -5,10 +5,28 @@ extends Control
 @onready var pronouns_line := %PronounsLine as LineEdit
 @onready var pronouns_options := %PronounsOptions as OptionButton
 @onready var start_button := %StartButton as Button
+@onready var tutorial_button := %TutorialButton as Button
 
 
 func _ready() -> void:
-	_on_pronouns_options_item_selected(2)
+	if PlayerData.was_started:
+		var pronouns := PlayerData.pronouns_nominative + "/" + PlayerData.pronouns_accusative
+		var correct_index := -1
+		for index in pronouns_options.item_count:
+			if pronouns_options.get_item_text(index) == pronouns:
+				correct_index = index
+		if correct_index != -1:
+			pronouns_options.selected = correct_index
+			_on_pronouns_options_item_selected(correct_index)
+		else:
+			pronouns_options.selected = pronouns_options.item_count - 1
+			_on_pronouns_options_item_selected(pronouns_options.item_count - 1)
+			_on_pronouns_line_text_changed(pronouns)
+			pronouns_line.text = pronouns
+		name_line.text = PlayerData.player_name
+	else:
+		pronouns_options.selected = 2
+		_on_pronouns_options_item_selected(2)
 
 
 func _on_pronouns_options_item_selected(index: int) -> void:
@@ -48,12 +66,23 @@ func validate_pronouns(text: String) -> bool:
 func _on_name_line_text_changed(new_text: String) -> void:
 	if validate_alnum(new_text):
 		start_button.disabled = false
+		tutorial_button.disabled = false
 	else:
 		start_button.disabled = true
+		tutorial_button.disabled = true
 
 
 func _on_pronouns_line_text_changed(new_text: String) -> void:
 	if validate_pronouns(new_text):
 		start_button.disabled = false
+		tutorial_button.disabled = false
 	else:
 		start_button.disabled = true
+		tutorial_button.disabled = true
+
+
+func _on_tutorial_button_pressed() -> void:
+	SfxPlayer.play_sound_effect(Sounds.button)
+	var pronouns := pronouns_line.text.split("/", true, 2)
+	PlayerData.start_game(name_line.text, pronouns[0], pronouns[1])
+	get_tree().change_scene_to_file("res://src/scenes/learning/empty_main.tscn")
