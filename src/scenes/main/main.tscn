@@ -295,9 +295,6 @@ offset_right = 63.0
 offset_bottom = 191.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("4_4k6hw")
-filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Brokk" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -308,9 +305,6 @@ offset_right = 317.0
 offset_bottom = 160.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("5_0ci1l")
-filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Mel" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -321,9 +315,6 @@ offset_right = 604.0
 offset_bottom = 85.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("6_2dxjs")
-filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Vivienne" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -350,9 +341,6 @@ offset_right = 1162.0
 offset_bottom = 136.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_s2x27")
-filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Om" parent="Characters" instance=ExtResource("4_tdins")]
 unique_name_in_owner = true
@@ -363,9 +351,6 @@ offset_right = 1429.0
 offset_bottom = 153.0
 scale = Vector2(0.5, 0.5)
 character_data = ExtResource("8_eijjg")
-filler_phrases_bad = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_normal = Array[ExtResource("9_tlpgv")]([])
-filler_phrases_good = Array[ExtResource("9_tlpgv")]([])
 
 [node name="Teapot" type="TextureRect" parent="."]
 unique_name_in_owner = true

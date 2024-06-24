@@ -3,6 +3,10 @@ extends Control
 
 @onready var learning_label := %LearningLabel as Label
 @onready var next_button := %NextButton as Button
+@onready var finishing := %Finishing as VBoxContainer
+@onready var invitation := %Invitation as VBoxContainer
+
+@onready var teapot := %Teapot as TextureRect
 
 
 @export var info: Array[String]
@@ -12,6 +16,7 @@ var current_info := 0
 func _ready() -> void:
 	current_info = 0
 	learning_label.text = info[0]
+	finishing.hide()
 
 
 func choose_tea() -> Tea:
@@ -26,7 +31,12 @@ func choose_tea() -> Tea:
 
 
 func make_tea() -> void:
-	pass
+	invitation.hide()
+	var tea := await choose_tea()
+	teapot.texture = tea.base.teapot
+	await SfxPlayer.play_sound_effect(Sounds.tea_pour)
+	await get_tree().create_timer(1.0).timeout
+	finishing.show()
 
 
 func _on_next_button_pressed() -> void:
@@ -36,3 +46,7 @@ func _on_next_button_pressed() -> void:
 		next_button.text = "To making tea"
 		next_button.pressed.disconnect(_on_next_button_pressed)
 		next_button.pressed.connect(make_tea)
+
+
+func _on_finish_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://src/scenes/ui/main_menu.tscn")
