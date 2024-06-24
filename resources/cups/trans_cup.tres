@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CupData" load_steps=4 format=3 uid="uid://cx0le06u1jber"]
+
+[ext_resource type="Script" path="res://src/resources/cup_data.gd" id="1_1drpv"]
+[ext_resource type="BitMap" uid="uid://m7khs7k488c0" path="res://assets/as_bitmask/cup_trans.png" id="1_thctd"]
+[ext_resource type="Texture2D" uid="uid://dse3ymtqry0b" path="res://assets/cup_trans.png" id="2_2kf74"]
+
+[resource]
+script = ExtResource("1_1drpv")
+sprite = ExtResource("2_2kf74")
+click_mask = ExtResource("1_thctd")

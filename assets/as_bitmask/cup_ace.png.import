@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cc0ij5wq87g70"
+path="res://.godot/imported/cup_ace.png-ba264d88cbae583cb357a67f4c07014d.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/cup_ace.png"
+dest_files=["res://.godot/imported/cup_ace.png-ba264d88cbae583cb357a67f4c07014d.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

@@ -31,6 +31,7 @@ func set_correct_sprites() -> void:
 		back_sprite.texture = null
 		front_sprite.texture = null
 		return
+	cup_spot.position = character_data.cup_spot
 	if has_cup:
 		back_sprite.texture = character_data.back_sprite_tea
 		front_sprite.texture = character_data.front_sprite_tea
@@ -53,6 +54,7 @@ func set_correct_sprites() -> void:
 
 func give_cup(cup: Cup) -> void:
 	cup.reparent(cup_spot, false)
+	cup.position = Vector2.ZERO
 	has_cup = true
 
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://m7khs7k488c0"
+path="res://.godot/imported/cup_trans.png-5d4ebc510c0438725e959e63bcb94295.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/cup_trans.png"
+dest_files=["res://.godot/imported/cup_trans.png-5d4ebc510c0438725e959e63bcb94295.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

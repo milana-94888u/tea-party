@@ -23,3 +23,6 @@ enum IngredientType {
 
 @export var ingredient_sprite: Texture2D
 @export var click_mask: BitMap
+
+@export var teapot: Texture2D  # only for base
+@export var tea_in_cup: Texture2D  # only for base

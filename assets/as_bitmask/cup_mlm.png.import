@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://sj2n626m7mvk"
+path="res://.godot/imported/cup_mlm.png-60c2d7a3cc73ac4fae18e79147461258.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/cup_mlm.png"
+dest_files=["res://.godot/imported/cup_mlm.png-60c2d7a3cc73ac4fae18e79147461258.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

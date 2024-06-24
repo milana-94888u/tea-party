@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://brxqggtuenwss"]
+
+[ext_resource type="Script" path="res://src/scenes/cup_choose/cup.gd" id="1_06mbi"]
+[ext_resource type="Texture2D" uid="uid://dynqejbmwpyeh" path="res://assets/cup_mlm.png" id="1_tcuvm"]
+[ext_resource type="BitMap" uid="uid://sj2n626m7mvk" path="res://assets/as_bitmask/cup_mlm.png" id="2_jnaew"]
+
+[node name="Cup" type="TextureButton"]
+offset_right = 300.0
+offset_bottom = 300.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_tcuvm")
+texture_click_mask = ExtResource("2_jnaew")
+script = ExtResource("1_06mbi")
+
+[node name="Tea" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true

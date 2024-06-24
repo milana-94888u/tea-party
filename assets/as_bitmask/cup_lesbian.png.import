@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://d3i544er05pu"
+path="res://.godot/imported/cup_lesbian.png-71a1a43be79048940aea1788828d075d.res"
+
+[deps]
+
+source_file="res://assets/as_bitmask/cup_lesbian.png"
+dest_files=["res://.godot/imported/cup_lesbian.png-71a1a43be79048940aea1788828d075d.res"]
+
+[params]
+
+create_from=0
+threshold=0.0

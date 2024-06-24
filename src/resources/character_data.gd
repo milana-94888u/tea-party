@@ -12,3 +12,5 @@ extends Resource
 @export var front_sprite_base: Texture2D
 @export var back_sprite_tea: Texture2D
 @export var front_sprite_tea: Texture2D
+
+@export var cup_spot: Vector2 = Vector2.ZERO

@@ -1,5 +1,16 @@
 extends Control
 
 
-func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://src/scenes/main/main.tscn")
+func _ready() -> void:
+	pass
+
+
+func choose_tea() -> Tea:
+	var shelves := preload("res://src/scenes/tea_choose/shelves.tscn").instantiate()
+	hide()
+	add_sibling.call_deferred(shelves)
+	shelves.show()
+	var tea: Tea = await shelves.tea_completed
+	shelves.queue_free()
+	show()
+	return tea

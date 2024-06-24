@@ -1,0 +1,93 @@
+[gd_scene load_steps=19 format=3 uid="uid://dtpgi8ckq271b"]
+
+[ext_resource type="Script" path="res://src/scenes/cup_choose/cup_dialog.gd" id="1_1vpqn"]
+[ext_resource type="PackedScene" uid="uid://brxqggtuenwss" path="res://src/scenes/cup_choose/cup.tscn" id="1_2lt5y"]
+[ext_resource type="Texture2D" uid="uid://jmlq1mq2ymlg" path="res://assets/cup_ace.png" id="2_bd5yb"]
+[ext_resource type="BitMap" uid="uid://cc0ij5wq87g70" path="res://assets/as_bitmask/cup_ace.png" id="3_evq6s"]
+[ext_resource type="Resource" uid="uid://ekhdmmilprno" path="res://resources/cups/ace_cup.tres" id="4_ua6gv"]
+[ext_resource type="Texture2D" uid="uid://b0pvr03lab5y4" path="res://assets/cup_bi.png" id="5_nbc0h"]
+[ext_resource type="BitMap" uid="uid://cxxqy545qak1l" path="res://assets/as_bitmask/cup_bi.png" id="6_6qgqo"]
+[ext_resource type="Resource" uid="uid://cw2b2lvo7cwe5" path="res://resources/cups/bi_cup.tres" id="7_83wuc"]
+[ext_resource type="Texture2D" uid="uid://dpo0r6jtjg5eu" path="res://assets/cup_lesbian.png" id="8_4vmov"]
+[ext_resource type="BitMap" uid="uid://d3i544er05pu" path="res://assets/as_bitmask/cup_lesbian.png" id="9_dci0f"]
+[ext_resource type="Resource" uid="uid://eqh18wl5i800" path="res://resources/cups/lesbian_cup.tres" id="10_lyuta"]
+[ext_resource type="Resource" uid="uid://lg2st24kpyiy" path="res://resources/cups/mlm_cup.tres" id="11_phhdr"]
+[ext_resource type="Texture2D" uid="uid://jwca4wc3l7j" path="res://assets/cup_nb.png" id="12_f1lq7"]
+[ext_resource type="BitMap" uid="uid://cuvvx62nmfcta" path="res://assets/as_bitmask/cup_nb.png" id="13_el0v6"]
+[ext_resource type="Resource" uid="uid://d35dr8yqssecd" path="res://resources/cups/nb_cup.tres" id="14_8wspv"]
+[ext_resource type="Texture2D" uid="uid://dse3ymtqry0b" path="res://assets/cup_trans.png" id="15_uqoxu"]
+[ext_resource type="BitMap" uid="uid://m7khs7k488c0" path="res://assets/as_bitmask/cup_trans.png" id="16_osll0"]
+[ext_resource type="Resource" uid="uid://cx0le06u1jber" path="res://resources/cups/trans_cup.tres" id="17_3hm85"]
+
+[node name="CupDialog" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1vpqn")
+
+[node name="Shelves" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_lock_ = true
+
+[node name="Cups" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -910.0
+offset_top = -300.0
+offset_right = 910.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="AceCup" parent="Cups" instance=ExtResource("1_2lt5y")]
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("2_bd5yb")
+texture_click_mask = ExtResource("3_evq6s")
+cup_data = ExtResource("4_ua6gv")
+
+[node name="BiCup" parent="Cups" instance=ExtResource("1_2lt5y")]
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("5_nbc0h")
+texture_click_mask = ExtResource("6_6qgqo")
+cup_data = ExtResource("7_83wuc")
+
+[node name="LesbianCup" parent="Cups" instance=ExtResource("1_2lt5y")]
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("8_4vmov")
+texture_click_mask = ExtResource("9_dci0f")
+cup_data = ExtResource("10_lyuta")
+
+[node name="MlmCup" parent="Cups" instance=ExtResource("1_2lt5y")]
+layout_mode = 2
+size_flags_horizontal = 6
+cup_data = ExtResource("11_phhdr")
+
+[node name="NbCup" parent="Cups" instance=ExtResource("1_2lt5y")]
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("12_f1lq7")
+texture_click_mask = ExtResource("13_el0v6")
+cup_data = ExtResource("14_8wspv")
+
+[node name="TransCup" parent="Cups" instance=ExtResource("1_2lt5y")]
+layout_mode = 2
+size_flags_horizontal = 6
+texture_normal = ExtResource("15_uqoxu")
+texture_click_mask = ExtResource("16_osll0")
+cup_data = ExtResource("17_3hm85")

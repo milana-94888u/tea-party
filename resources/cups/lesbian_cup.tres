@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CupData" load_steps=4 format=3 uid="uid://eqh18wl5i800"]
+
+[ext_resource type="BitMap" uid="uid://d3i544er05pu" path="res://assets/as_bitmask/cup_lesbian.png" id="1_4ql3k"]
+[ext_resource type="Script" path="res://src/resources/cup_data.gd" id="1_poaux"]
+[ext_resource type="Texture2D" uid="uid://dpo0r6jtjg5eu" path="res://assets/cup_lesbian.png" id="2_7i0lj"]
+
+[resource]
+script = ExtResource("1_poaux")
+sprite = ExtResource("2_7i0lj")
+click_mask = ExtResource("1_4ql3k")
