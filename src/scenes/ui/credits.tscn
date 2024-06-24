@@ -34,20 +34,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 60
 
-[node name="Wildcards" type="VBoxContainer" parent="HBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="HBoxContainer/Wildcards"]
-layout_mode = 2
-theme_type_variation = &"HeaderLarge"
-text = "Used wildcards"
-
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Wildcards"]
-layout_mode = 2
-texture = ExtResource("3_yitho")
-expand_mode = 4
-stretch_mode = 4
-
 [node name="Creators" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
 
@@ -77,10 +63,31 @@ text = "aurevariss"
 underline = 1
 uri = "https://aurevariss.itch.io/"
 
+[node name="LovelySharkPlush" type="LinkButton" parent="HBoxContainer/Creators"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "LovelySharkPlush"
+underline = 1
+uri = "https://lovelysharkplush.itch.io/"
+
 [node name="BackButton" type="Button" parent="HBoxContainer/Creators"]
 unique_name_in_owner = true
 layout_mode = 2
 mouse_default_cursor_shape = 2
 text = "Back"
+
+[node name="Wildcards" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Wildcards"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Used wildcards"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Wildcards"]
+layout_mode = 2
+texture = ExtResource("3_yitho")
+expand_mode = 4
+stretch_mode = 4
 
 [connection signal="pressed" from="HBoxContainer/Creators/BackButton" to="." method="_on_back_button_pressed"]
