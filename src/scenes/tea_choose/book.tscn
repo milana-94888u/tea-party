@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bo55lclof6yi5"]
+[gd_scene load_steps=31 format=3 uid="uid://bo55lclof6yi5"]
 
 [ext_resource type="Script" path="res://src/scenes/tea_choose/book.gd" id="1_cryjv"]
 [ext_resource type="Texture2D" uid="uid://drf7k7ogfvr01" path="res://assets/book_open_wo_marks_1.png" id="2_0suiu"]
@@ -11,6 +11,25 @@
 [ext_resource type="BitMap" uid="uid://blbgum772141y" path="res://assets/as_bitmask/blue_mark.png" id="6_fsu5y"]
 [ext_resource type="Texture2D" uid="uid://djiek1pyimvl4" path="res://assets/pink_mark.png" id="7_ng0jj"]
 [ext_resource type="BitMap" uid="uid://bslqfkfcbwgss" path="res://assets/as_bitmask/pink_mark.png" id="8_0a1sb"]
+[ext_resource type="Resource" uid="uid://dqwk05j8mb5pl" path="res://resources/tea_varieties/flowers/camomile.tres" id="11_hwg7m"]
+[ext_resource type="PackedScene" uid="uid://ybmn21in4i06" path="res://src/scenes/tea_choose/tea_ingredient_book_info.tscn" id="12_1x730"]
+[ext_resource type="Resource" uid="uid://d2j0vte26o57m" path="res://resources/tea_varieties/flowers/melissa.tres" id="12_cs0he"]
+[ext_resource type="Resource" uid="uid://dhvxga01h7bu5" path="res://resources/tea_varieties/base/green_tea.tres" id="13_2klr8"]
+[ext_resource type="Resource" uid="uid://c0ts11bq26fvg" path="res://resources/tea_varieties/flowers/mint.tres" id="13_4srb4"]
+[ext_resource type="Resource" uid="uid://bcgs2yb7srhqc" path="res://resources/tea_varieties/flowers/nettle.tres" id="14_t20w3"]
+[ext_resource type="Resource" uid="uid://brwwpf1m0xcw8" path="res://resources/tea_varieties/base/black_tea.tres" id="14_x3hx4"]
+[ext_resource type="Resource" uid="uid://c8qrrx3j2tait" path="res://resources/tea_varieties/base/blue_tea.tres" id="15_8bq6c"]
+[ext_resource type="Resource" uid="uid://cecgx63uoieor" path="res://resources/tea_varieties/flowers/dandelions.tres" id="15_8br01"]
+[ext_resource type="Resource" uid="uid://dbfqhpnqrw11q" path="res://resources/tea_varieties/base/pink_tea.tres" id="16_5x7xv"]
+[ext_resource type="Resource" uid="uid://da1vksuy6j62w" path="res://resources/tea_varieties/flowers/sage.tres" id="16_d0cgf"]
+[ext_resource type="Resource" uid="uid://447hflvosclq" path="res://resources/tea_varieties/fruit_bits/wild_berries.tres" id="17_4gb5j"]
+[ext_resource type="Resource" uid="uid://b2ek4h84tkyv1" path="res://resources/tea_varieties/base/red_tea.tres" id="17_tgjmm"]
+[ext_resource type="Resource" uid="uid://cr3fs0eeu12dy" path="res://resources/tea_varieties/base/orange_tea.tres" id="18_pb1ru"]
+[ext_resource type="Resource" uid="uid://wpe4xree2ruk" path="res://resources/tea_varieties/fruit_bits/citrus.tres" id="18_qkk61"]
+[ext_resource type="Resource" uid="uid://b1kjxxieosygr" path="res://resources/tea_varieties/fruit_bits/apple.tres" id="19_1bdak"]
+[ext_resource type="Resource" uid="uid://bdl1dt2anlopa" path="res://resources/tea_varieties/fruit_bits/pomegranate.tres" id="20_wvs3o"]
+[ext_resource type="Resource" uid="uid://bi4mviuew0rte" path="res://resources/tea_varieties/fruit_bits/apricots.tres" id="21_wtkul"]
+[ext_resource type="Resource" uid="uid://chfnuedk3q1qm" path="res://resources/tea_varieties/fruit_bits/cherries.tres" id="22_1s5f6"]
 
 [node name="Book" type="Control"]
 layout_mode = 3
@@ -23,6 +42,9 @@ script = ExtResource("1_cryjv")
 yellow_page_texture = ExtResource("2_0suiu")
 blue_page_texture = ExtResource("3_evcm7")
 pink_page_texture = ExtResource("4_88ctw")
+base_ingredients = Array[Resource("res://src/resources/tea_variety.gd")]([ExtResource("13_2klr8"), ExtResource("14_x3hx4"), ExtResource("15_8bq6c"), ExtResource("16_5x7xv"), ExtResource("17_tgjmm"), ExtResource("18_pb1ru")])
+flower_ingredients = Array[Resource("res://src/resources/tea_variety.gd")]([ExtResource("11_hwg7m"), ExtResource("12_cs0he"), ExtResource("13_4srb4"), ExtResource("14_t20w3"), ExtResource("15_8br01"), ExtResource("16_d0cgf")])
+fruit_bits_ingredients = Array[Resource("res://src/resources/tea_variety.gd")]([ExtResource("17_4gb5j"), ExtResource("18_qkk61"), ExtResource("19_1bdak"), ExtResource("20_wvs3o"), ExtResource("21_wtkul"), ExtResource("22_1s5f6")])
 
 [node name="OutsideSpace" type="TextureButton" parent="."]
 layout_mode = 1
@@ -75,11 +97,47 @@ texture_click_mask = ExtResource("8_0a1sb")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 294.0
+offset_left = 350.0
 offset_top = 168.0
-offset_right = 1546.0
-offset_bottom = 808.0
+offset_right = 2463.0
+offset_bottom = 1273.0
+scale = Vector2(0.6, 0.6)
 columns = 2
+
+[node name="TeaIngredientBookInfo" parent="GridContainer" instance=ExtResource("12_1x730")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+ingredient_data = ExtResource("13_2klr8")
+
+[node name="TeaIngredientBookInfo2" parent="GridContainer" instance=ExtResource("12_1x730")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+ingredient_data = ExtResource("14_x3hx4")
+
+[node name="TeaIngredientBookInfo3" parent="GridContainer" instance=ExtResource("12_1x730")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+ingredient_data = ExtResource("15_8bq6c")
+
+[node name="TeaIngredientBookInfo4" parent="GridContainer" instance=ExtResource("12_1x730")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+ingredient_data = ExtResource("16_5x7xv")
+
+[node name="TeaIngredientBookInfo5" parent="GridContainer" instance=ExtResource("12_1x730")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="TeaIngredientBookInfo6" parent="GridContainer" instance=ExtResource("12_1x730")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+ingredient_data = ExtResource("18_pb1ru")
 
 [connection signal="pressed" from="OutsideSpace" to="." method="_on_outside_space_pressed"]
 [connection signal="pressed" from="YellowMark" to="." method="_on_yellow_mark_pressed"]

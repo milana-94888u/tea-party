@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_wqntu")
+name = "Sage"
+description = "It’s pretty, but doesn’t really add that much flavor. However, many like it for that same reason."
 effect = 2
 ingredient_type = 1
 ingredient_sprite = ExtResource("1_s4jvr")

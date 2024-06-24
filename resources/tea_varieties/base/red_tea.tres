@@ -8,6 +8,8 @@
 
 [resource]
 script = ExtResource("1_77wtp")
+name = "Red Tea"
+description = "Bitter type of tea. Doesn’t have the same influence as black tea, you can drink this as much"
 effect = 4
 ingredient_type = 0
 ingredient_sprite = ExtResource("1_k0nu4")

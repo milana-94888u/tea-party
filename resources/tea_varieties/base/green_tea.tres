@@ -8,6 +8,8 @@
 
 [resource]
 script = ExtResource("1_cxdit")
+name = "Green Tea"
+description = "Doesn’t taste like anything, but that’s the best part."
 effect = 0
 ingredient_type = 0
 ingredient_sprite = ExtResource("1_7q61l")

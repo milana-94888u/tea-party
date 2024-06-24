@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_qjibv")
+name = "Nettle"
+description = "Now that’s bitter enough. Very good for your stomach."
 effect = 4
 ingredient_type = 1
 ingredient_sprite = ExtResource("1_7osaa")

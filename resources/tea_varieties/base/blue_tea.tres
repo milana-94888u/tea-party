@@ -8,6 +8,8 @@
 
 [resource]
 script = ExtResource("1_jtqfl")
+name = "Blue Tea"
+description = "A calming type of tea. Perfect for someone who’s worried all the time."
 effect = 2
 ingredient_type = 0
 ingredient_sprite = ExtResource("1_m5ceb")

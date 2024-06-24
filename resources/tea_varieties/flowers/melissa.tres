@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_gofsc")
+name = "Melissa"
+description = "Adds a brief sweet flavor and aroma."
 effect = 5
 ingredient_type = 1
 ingredient_sprite = ExtResource("1_tgsth")

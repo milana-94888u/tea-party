@@ -17,6 +17,8 @@ enum IngredientType {
 	FRUIT_BITS,
 }
 
+@export var name: String
+@export var description: String
 @export var effect: TeaEffect
 @export var ingredient_type: IngredientType
 

@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_agtlj")
+name = "Pomegranate"
+description = "When you put these in your tea it somehow makes the whole thing bitter, but personally I like the taste."
 effect = 2
 ingredient_type = 2
 ingredient_sprite = ExtResource("1_vt75v")

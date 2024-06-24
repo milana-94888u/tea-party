@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_eapcs")
+name = "Apricots"
+description = "Anxiety reducing as far as I noticed, but also might make you sleepy."
 effect = 0
 ingredient_type = 2
 ingredient_sprite = ExtResource("1_y2i56")

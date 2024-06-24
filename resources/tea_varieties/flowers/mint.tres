@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_anrph")
+name = "Mint"
+description = "Quite an interesting flavor that reminds of bitterness but isn't’ it. Makes you more focused."
 effect = 1
 ingredient_type = 1
 ingredient_sprite = ExtResource("1_sl037")

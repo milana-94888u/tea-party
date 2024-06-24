@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_4486w")
+name = "Dandelions"
+description = "Some make jam out of it? We make tea! Somehow makes you want to do things you planned to do for a long time."
 effect = 3
 ingredient_type = 1
 ingredient_sprite = ExtResource("1_rphis")

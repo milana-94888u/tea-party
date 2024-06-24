@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_35kav")
+name = "Wild Berries"
+description = "Makes it easier to think, good for when you want to read or do some mental gymnastics."
 effect = 3
 ingredient_type = 2
 ingredient_sprite = ExtResource("1_qy2th")

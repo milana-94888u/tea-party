@@ -8,6 +8,8 @@
 
 [resource]
 script = ExtResource("1_jekdt")
+name = "Black Tea"
+description = "It’s like coffee! Be ready to be very excited and quite unprepared for a night of no sleep."
 effect = 0
 ingredient_type = 0
 ingredient_sprite = ExtResource("1_rfdq4")

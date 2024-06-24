@@ -6,6 +6,8 @@
 
 [resource]
 script = ExtResource("1_ov44g")
+name = "Cherries"
+description = "Just cherries that add sweetness to your tea. You don’t even have to add sugar to it now."
 effect = 5
 ingredient_type = 2
 ingredient_sprite = ExtResource("2_ssfq1")
